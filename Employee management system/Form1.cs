@@ -26,5 +26,10 @@ namespace Employee_management_system
         {
 
         }
+
+        private void btnUser_Click(object sender, EventArgs e)
+        {
+            new frmUser().ShowDialog();
+        }
     }
 }

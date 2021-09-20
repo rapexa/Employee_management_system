@@ -61,5 +61,10 @@ namespace Employee_management_system
         {
 
         }
+
+        private void btnback_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
     }
 }

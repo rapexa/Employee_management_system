@@ -129,6 +129,7 @@
             this.btnUser.Size = new System.Drawing.Size(68, 68);
             this.btnUser.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled;
             this.btnUser.TabIndex = 4;
+            this.btnUser.Click += new System.EventHandler(this.btnUser_Click);
             // 
             // groupPanel3
             // 
