@@ -8,6 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
+
 namespace Employee_management_system
 {
     public partial class frmUser : Form
@@ -65,6 +66,11 @@ namespace Employee_management_system
         private void btnback_Click(object sender, EventArgs e)
         {
             this.Close();
+        }
+
+        private void frmUser_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }
