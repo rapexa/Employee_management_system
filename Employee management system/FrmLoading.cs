@@ -16,5 +16,23 @@ namespace Employee_management_system
         {
             InitializeComponent();
         }
+
+        private void timer1_Tick(object sender, EventArgs e)
+        {
+            try
+            {
+                pr.Value += 10;
+                if (pr.Value == 100)
+                {
+                    timer1.Stop();
+                    new Form1().ShowDialog();
+                    this.Close();
+                }
+            }
+            catch(Exception)
+            {
+
+            }
+        }
     }
 }

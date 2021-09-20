@@ -41,7 +41,7 @@
             this.groupPanel1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.groupPanel1.Location = new System.Drawing.Point(0, 0);
             this.groupPanel1.Name = "groupPanel1";
-            this.groupPanel1.Size = new System.Drawing.Size(690, 312);
+            this.groupPanel1.Size = new System.Drawing.Size(870, 343);
             // 
             // 
             // 
@@ -81,7 +81,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(690, 312);
+            this.ClientSize = new System.Drawing.Size(870, 343);
             this.Controls.Add(this.groupPanel1);
             this.Name = "Form1";
             this.Text = "Employee management system";
