@@ -21,5 +21,10 @@ namespace Employee_management_system
         {
 
         }
+
+        private void expandablePanel1_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
