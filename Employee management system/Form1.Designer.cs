@@ -34,14 +34,20 @@
             this.styleManager1 = new DevComponents.DotNetBar.StyleManager(this.components);
             this.expandablePanel1 = new DevComponents.DotNetBar.ExpandablePanel();
             this.btnUser = new DevComponents.DotNetBar.ButtonX();
+            this.groupPanel3 = new DevComponents.DotNetBar.Controls.GroupPanel();
+            this.btnback = new System.Windows.Forms.Button();
+            this.btndelete = new System.Windows.Forms.Button();
+            this.btnsave = new System.Windows.Forms.Button();
             this.groupPanel1.SuspendLayout();
             this.expandablePanel1.SuspendLayout();
+            this.groupPanel3.SuspendLayout();
             this.SuspendLayout();
             // 
             // groupPanel1
             // 
             this.groupPanel1.CanvasColor = System.Drawing.SystemColors.Control;
             this.groupPanel1.ColorSchemeStyle = DevComponents.DotNetBar.eDotNetBarStyle.Office2007;
+            this.groupPanel1.Controls.Add(this.groupPanel3);
             this.groupPanel1.Controls.Add(this.expandablePanel1);
             this.groupPanel1.DisabledBackColor = System.Drawing.Color.Empty;
             this.groupPanel1.Dock = System.Windows.Forms.DockStyle.Fill;
@@ -124,6 +130,84 @@
             this.btnUser.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled;
             this.btnUser.TabIndex = 4;
             // 
+            // groupPanel3
+            // 
+            this.groupPanel3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(239)))), ((int)(((byte)(239)))), ((int)(((byte)(242)))));
+            this.groupPanel3.CanvasColor = System.Drawing.SystemColors.Control;
+            this.groupPanel3.ColorSchemeStyle = DevComponents.DotNetBar.eDotNetBarStyle.Office2007;
+            this.groupPanel3.Controls.Add(this.btnback);
+            this.groupPanel3.Controls.Add(this.btndelete);
+            this.groupPanel3.Controls.Add(this.btnsave);
+            this.groupPanel3.DisabledBackColor = System.Drawing.Color.Empty;
+            this.groupPanel3.Location = new System.Drawing.Point(310, 148);
+            this.groupPanel3.Name = "groupPanel3";
+            this.groupPanel3.Size = new System.Drawing.Size(259, 42);
+            // 
+            // 
+            // 
+            this.groupPanel3.Style.BackColor2SchemePart = DevComponents.DotNetBar.eColorSchemePart.PanelBackground2;
+            this.groupPanel3.Style.BackColorGradientAngle = 90;
+            this.groupPanel3.Style.BackColorSchemePart = DevComponents.DotNetBar.eColorSchemePart.PanelBackground;
+            this.groupPanel3.Style.BorderBottom = DevComponents.DotNetBar.eStyleBorderType.Solid;
+            this.groupPanel3.Style.BorderBottomWidth = 1;
+            this.groupPanel3.Style.BorderColorSchemePart = DevComponents.DotNetBar.eColorSchemePart.PanelBorder;
+            this.groupPanel3.Style.BorderLeft = DevComponents.DotNetBar.eStyleBorderType.Solid;
+            this.groupPanel3.Style.BorderLeftWidth = 1;
+            this.groupPanel3.Style.BorderRight = DevComponents.DotNetBar.eStyleBorderType.Solid;
+            this.groupPanel3.Style.BorderRightWidth = 1;
+            this.groupPanel3.Style.BorderTop = DevComponents.DotNetBar.eStyleBorderType.Solid;
+            this.groupPanel3.Style.BorderTopWidth = 1;
+            this.groupPanel3.Style.CornerDiameter = 4;
+            this.groupPanel3.Style.CornerType = DevComponents.DotNetBar.eCornerType.Rounded;
+            this.groupPanel3.Style.TextAlignment = DevComponents.DotNetBar.eStyleTextAlignment.Center;
+            this.groupPanel3.Style.TextColorSchemePart = DevComponents.DotNetBar.eColorSchemePart.PanelText;
+            this.groupPanel3.Style.TextLineAlignment = DevComponents.DotNetBar.eStyleTextAlignment.Near;
+            // 
+            // 
+            // 
+            this.groupPanel3.StyleMouseDown.CornerType = DevComponents.DotNetBar.eCornerType.Square;
+            // 
+            // 
+            // 
+            this.groupPanel3.StyleMouseOver.CornerType = DevComponents.DotNetBar.eCornerType.Square;
+            this.groupPanel3.TabIndex = 4;
+            // 
+            // btnback
+            // 
+            this.btnback.Image = ((System.Drawing.Image)(resources.GetObject("btnback.Image")));
+            this.btnback.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btnback.Location = new System.Drawing.Point(171, 1);
+            this.btnback.Name = "btnback";
+            this.btnback.Size = new System.Drawing.Size(83, 34);
+            this.btnback.TabIndex = 6;
+            this.btnback.Text = "back";
+            this.btnback.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnback.UseVisualStyleBackColor = true;
+            // 
+            // btndelete
+            // 
+            this.btndelete.Image = ((System.Drawing.Image)(resources.GetObject("btndelete.Image")));
+            this.btndelete.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btndelete.Location = new System.Drawing.Point(85, 1);
+            this.btndelete.Name = "btndelete";
+            this.btndelete.Size = new System.Drawing.Size(83, 34);
+            this.btndelete.TabIndex = 5;
+            this.btndelete.Text = "delete";
+            this.btndelete.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btndelete.UseVisualStyleBackColor = true;
+            // 
+            // btnsave
+            // 
+            this.btnsave.Image = ((System.Drawing.Image)(resources.GetObject("btnsave.Image")));
+            this.btnsave.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btnsave.Location = new System.Drawing.Point(0, 1);
+            this.btnsave.Name = "btnsave";
+            this.btnsave.Size = new System.Drawing.Size(83, 34);
+            this.btnsave.TabIndex = 4;
+            this.btnsave.Text = "save";
+            this.btnsave.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnsave.UseVisualStyleBackColor = true;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
@@ -137,6 +221,7 @@
             this.Load += new System.EventHandler(this.Form1_Load);
             this.groupPanel1.ResumeLayout(false);
             this.expandablePanel1.ResumeLayout(false);
+            this.groupPanel3.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -147,6 +232,10 @@
         private DevComponents.DotNetBar.StyleManager styleManager1;
         private DevComponents.DotNetBar.ExpandablePanel expandablePanel1;
         private DevComponents.DotNetBar.ButtonX btnUser;
+        private DevComponents.DotNetBar.Controls.GroupPanel groupPanel3;
+        private System.Windows.Forms.Button btnback;
+        private System.Windows.Forms.Button btndelete;
+        private System.Windows.Forms.Button btnsave;
     }
 }
 
