@@ -139,5 +139,10 @@ namespace Employee_management_system
             
             }
         }
+
+        private void groupPanel2_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

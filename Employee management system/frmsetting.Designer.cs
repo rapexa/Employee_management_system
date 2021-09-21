@@ -1,6 +1,6 @@
 ﻿namespace Employee_management_system
 {
-    partial class frmUser
+    partial class frmsetting
     {
         /// <summary>
         /// Required designer variable.
@@ -28,24 +28,25 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmUser));
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmsetting));
             this.groupPanel1 = new DevComponents.DotNetBar.Controls.GroupPanel();
             this.groupPanel3 = new DevComponents.DotNetBar.Controls.GroupPanel();
+            this.btnEdit = new System.Windows.Forms.Button();
             this.btnback = new System.Windows.Forms.Button();
             this.btndelete = new System.Windows.Forms.Button();
             this.btnsave = new System.Windows.Forms.Button();
-            this.dgvUser = new DevComponents.DotNetBar.Controls.DataGridViewX();
             this.groupPanel2 = new DevComponents.DotNetBar.Controls.GroupPanel();
+            this.btnS = new DevComponents.DotNetBar.ButtonX();
+            this.labelX2 = new DevComponents.DotNetBar.LabelX();
+            this.txtAddress = new DevComponents.DotNetBar.Controls.TextBoxX();
+            this.txtCode = new DevComponents.DotNetBar.Controls.TextBoxX();
             this.asdasd = new DevComponents.DotNetBar.LabelX();
-            this.lblcode = new DevComponents.DotNetBar.LabelX();
-            this.textUname = new DevComponents.DotNetBar.Controls.TextBoxX();
+            this.txtCompany = new DevComponents.DotNetBar.Controls.TextBoxX();
             this.labelX3 = new DevComponents.DotNetBar.LabelX();
-            this.textPass = new DevComponents.DotNetBar.Controls.TextBoxX();
+            this.txtPhone = new DevComponents.DotNetBar.Controls.TextBoxX();
             this.labelX1 = new DevComponents.DotNetBar.LabelX();
             this.groupPanel1.SuspendLayout();
             this.groupPanel3.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dgvUser)).BeginInit();
             this.groupPanel2.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -55,13 +56,12 @@
             this.groupPanel1.CanvasColor = System.Drawing.SystemColors.Control;
             this.groupPanel1.ColorSchemeStyle = DevComponents.DotNetBar.eDotNetBarStyle.Office2007;
             this.groupPanel1.Controls.Add(this.groupPanel3);
-            this.groupPanel1.Controls.Add(this.dgvUser);
             this.groupPanel1.Controls.Add(this.groupPanel2);
             this.groupPanel1.DisabledBackColor = System.Drawing.Color.Empty;
             this.groupPanel1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.groupPanel1.Location = new System.Drawing.Point(0, 0);
             this.groupPanel1.Name = "groupPanel1";
-            this.groupPanel1.Size = new System.Drawing.Size(274, 382);
+            this.groupPanel1.Size = new System.Drawing.Size(388, 306);
             // 
             // 
             // 
@@ -95,16 +95,17 @@
             // 
             // groupPanel3
             // 
-            this.groupPanel3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(239)))), ((int)(((byte)(239)))), ((int)(((byte)(242)))));
+            this.groupPanel3.BackColor = System.Drawing.Color.Transparent;
             this.groupPanel3.CanvasColor = System.Drawing.SystemColors.Control;
             this.groupPanel3.ColorSchemeStyle = DevComponents.DotNetBar.eDotNetBarStyle.Office2007;
+            this.groupPanel3.Controls.Add(this.btnEdit);
             this.groupPanel3.Controls.Add(this.btnback);
             this.groupPanel3.Controls.Add(this.btndelete);
             this.groupPanel3.Controls.Add(this.btnsave);
             this.groupPanel3.DisabledBackColor = System.Drawing.Color.Empty;
-            this.groupPanel3.Location = new System.Drawing.Point(3, 139);
+            this.groupPanel3.Location = new System.Drawing.Point(3, 259);
             this.groupPanel3.Name = "groupPanel3";
-            this.groupPanel3.Size = new System.Drawing.Size(259, 42);
+            this.groupPanel3.Size = new System.Drawing.Size(376, 42);
             // 
             // 
             // 
@@ -133,7 +134,22 @@
             // 
             // 
             this.groupPanel3.StyleMouseOver.CornerType = DevComponents.DotNetBar.eCornerType.Square;
-            this.groupPanel3.TabIndex = 3;
+            this.groupPanel3.TabIndex = 6;
+            // 
+            // btnEdit
+            // 
+            this.btnEdit.AutoEllipsis = true;
+            this.btnEdit.BackColor = System.Drawing.Color.Transparent;
+            this.btnEdit.Image = ((System.Drawing.Image)(resources.GetObject("btnEdit.Image")));
+            this.btnEdit.ImageAlign = System.Drawing.ContentAlignment.BottomRight;
+            this.btnEdit.Location = new System.Drawing.Point(97, 1);
+            this.btnEdit.Name = "btnEdit";
+            this.btnEdit.Size = new System.Drawing.Size(83, 34);
+            this.btnEdit.TabIndex = 8;
+            this.btnEdit.Text = "Edit";
+            this.btnEdit.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnEdit.UseVisualStyleBackColor = false;
+            this.btnEdit.Click += new System.EventHandler(this.btnEdit_Click);
             // 
             // btnback
             // 
@@ -141,10 +157,10 @@
             this.btnback.DialogResult = System.Windows.Forms.DialogResult.Cancel;
             this.btnback.Image = ((System.Drawing.Image)(resources.GetObject("btnback.Image")));
             this.btnback.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.btnback.Location = new System.Drawing.Point(171, 1);
+            this.btnback.Location = new System.Drawing.Point(284, 1);
             this.btnback.Name = "btnback";
             this.btnback.Size = new System.Drawing.Size(83, 34);
-            this.btnback.TabIndex = 6;
+            this.btnback.TabIndex = 10;
             this.btnback.Text = "back";
             this.btnback.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnback.UseVisualStyleBackColor = false;
@@ -155,10 +171,10 @@
             this.btndelete.BackColor = System.Drawing.Color.Transparent;
             this.btndelete.Image = ((System.Drawing.Image)(resources.GetObject("btndelete.Image")));
             this.btndelete.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.btndelete.Location = new System.Drawing.Point(85, 1);
+            this.btndelete.Location = new System.Drawing.Point(190, 1);
             this.btndelete.Name = "btndelete";
             this.btndelete.Size = new System.Drawing.Size(83, 34);
-            this.btndelete.TabIndex = 5;
+            this.btndelete.TabIndex = 9;
             this.btndelete.Text = "delete";
             this.btndelete.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btndelete.UseVisualStyleBackColor = false;
@@ -169,48 +185,33 @@
             this.btnsave.BackColor = System.Drawing.Color.Transparent;
             this.btnsave.Image = ((System.Drawing.Image)(resources.GetObject("btnsave.Image")));
             this.btnsave.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.btnsave.Location = new System.Drawing.Point(0, 1);
+            this.btnsave.Location = new System.Drawing.Point(3, 1);
             this.btnsave.Name = "btnsave";
             this.btnsave.Size = new System.Drawing.Size(83, 34);
-            this.btnsave.TabIndex = 4;
+            this.btnsave.TabIndex = 7;
             this.btnsave.Text = "save";
             this.btnsave.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnsave.UseVisualStyleBackColor = false;
-            this.btnsave.Click += new System.EventHandler(this.button2_Click);
-            // 
-            // dgvUser
-            // 
-            this.dgvUser.BackgroundColor = System.Drawing.Color.White;
-            this.dgvUser.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle1.BackColor = System.Drawing.SystemColors.Window;
-            dataGridViewCellStyle1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle1.ForeColor = System.Drawing.Color.Black;
-            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.Color.Black;
-            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.dgvUser.DefaultCellStyle = dataGridViewCellStyle1;
-            this.dgvUser.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(170)))), ((int)(((byte)(170)))), ((int)(((byte)(170)))));
-            this.dgvUser.Location = new System.Drawing.Point(7, 183);
-            this.dgvUser.Name = "dgvUser";
-            this.dgvUser.Size = new System.Drawing.Size(255, 190);
-            this.dgvUser.TabIndex = 7;
+            this.btnsave.Click += new System.EventHandler(this.btnsave_Click);
             // 
             // groupPanel2
             // 
             this.groupPanel2.BackColor = System.Drawing.Color.Transparent;
             this.groupPanel2.CanvasColor = System.Drawing.SystemColors.Control;
             this.groupPanel2.ColorSchemeStyle = DevComponents.DotNetBar.eDotNetBarStyle.Office2007;
+            this.groupPanel2.Controls.Add(this.btnS);
+            this.groupPanel2.Controls.Add(this.labelX2);
+            this.groupPanel2.Controls.Add(this.txtAddress);
+            this.groupPanel2.Controls.Add(this.txtCode);
             this.groupPanel2.Controls.Add(this.asdasd);
-            this.groupPanel2.Controls.Add(this.lblcode);
-            this.groupPanel2.Controls.Add(this.textUname);
+            this.groupPanel2.Controls.Add(this.txtCompany);
             this.groupPanel2.Controls.Add(this.labelX3);
-            this.groupPanel2.Controls.Add(this.textPass);
+            this.groupPanel2.Controls.Add(this.txtPhone);
             this.groupPanel2.Controls.Add(this.labelX1);
             this.groupPanel2.DisabledBackColor = System.Drawing.Color.Empty;
-            this.groupPanel2.Location = new System.Drawing.Point(7, 3);
+            this.groupPanel2.Location = new System.Drawing.Point(3, 3);
             this.groupPanel2.Name = "groupPanel2";
-            this.groupPanel2.Size = new System.Drawing.Size(255, 130);
+            this.groupPanel2.Size = new System.Drawing.Size(376, 250);
             // 
             // 
             // 
@@ -241,7 +242,62 @@
             this.groupPanel2.StyleMouseOver.CornerType = DevComponents.DotNetBar.eCornerType.Square;
             this.groupPanel2.TabIndex = 0;
             this.groupPanel2.Text = "Please enter the information";
-            this.groupPanel2.Click += new System.EventHandler(this.groupPanel2_Click);
+            // 
+            // btnS
+            // 
+            this.btnS.AccessibleRole = System.Windows.Forms.AccessibleRole.PushButton;
+            this.btnS.ColorTable = DevComponents.DotNetBar.eButtonColor.OrangeWithBackground;
+            this.btnS.Location = new System.Drawing.Point(292, 10);
+            this.btnS.Name = "btnS";
+            this.btnS.Size = new System.Drawing.Size(75, 20);
+            this.btnS.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled;
+            this.btnS.TabIndex = 2;
+            this.btnS.Text = "Search";
+            this.btnS.Click += new System.EventHandler(this.btnS_Click);
+            // 
+            // labelX2
+            // 
+            this.labelX2.BackColor = System.Drawing.Color.Transparent;
+            // 
+            // 
+            // 
+            this.labelX2.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square;
+            this.labelX2.Location = new System.Drawing.Point(3, 100);
+            this.labelX2.Name = "labelX2";
+            this.labelX2.Size = new System.Drawing.Size(63, 23);
+            this.labelX2.TabIndex = 8;
+            this.labelX2.Text = "Address :";
+            // 
+            // txtAddress
+            // 
+            // 
+            // 
+            // 
+            this.txtAddress.Border.Class = "TextBoxBorder";
+            this.txtAddress.Border.CornerType = DevComponents.DotNetBar.eCornerType.Square;
+            this.txtAddress.DisabledBackColor = System.Drawing.Color.White;
+            this.txtAddress.Location = new System.Drawing.Point(69, 103);
+            this.txtAddress.Multiline = true;
+            this.txtAddress.Name = "txtAddress";
+            this.txtAddress.PreventEnterBeep = true;
+            this.txtAddress.ScrollBars = System.Windows.Forms.ScrollBars.Both;
+            this.txtAddress.Size = new System.Drawing.Size(298, 121);
+            this.txtAddress.TabIndex = 5;
+            // 
+            // txtCode
+            // 
+            // 
+            // 
+            // 
+            this.txtCode.Border.Class = "TextBoxBorder";
+            this.txtCode.Border.CornerType = DevComponents.DotNetBar.eCornerType.Square;
+            this.txtCode.DisabledBackColor = System.Drawing.Color.White;
+            this.txtCode.Location = new System.Drawing.Point(69, 10);
+            this.txtCode.Name = "txtCode";
+            this.txtCode.PreventEnterBeep = true;
+            this.txtCode.Size = new System.Drawing.Size(217, 20);
+            this.txtCode.TabIndex = 1;
+            this.txtCode.TextChanged += new System.EventHandler(this.txtCode_TextChanged);
             // 
             // asdasd
             // 
@@ -254,39 +310,21 @@
             this.asdasd.Name = "asdasd";
             this.asdasd.Size = new System.Drawing.Size(63, 23);
             this.asdasd.TabIndex = 3;
-            this.asdasd.Text = "password :";
-            this.asdasd.Click += new System.EventHandler(this.labelX2_Click);
+            this.asdasd.Text = "Phone Call :";
             // 
-            // lblcode
-            // 
-            this.lblcode.BackColor = System.Drawing.Color.Transparent;
+            // txtCompany
             // 
             // 
             // 
-            this.lblcode.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square;
-            this.lblcode.Location = new System.Drawing.Point(69, 8);
-            this.lblcode.Name = "lblcode";
-            this.lblcode.Size = new System.Drawing.Size(56, 23);
-            this.lblcode.TabIndex = 6;
-            this.lblcode.Text = "0";
-            this.lblcode.Click += new System.EventHandler(this.lblcode_Click);
             // 
-            // textUname
-            // 
-            this.textUname.BackColor = System.Drawing.Color.White;
-            // 
-            // 
-            // 
-            this.textUname.Border.Class = "TextBoxBorder";
-            this.textUname.Border.CornerType = DevComponents.DotNetBar.eCornerType.Square;
-            this.textUname.DisabledBackColor = System.Drawing.Color.White;
-            this.textUname.ForeColor = System.Drawing.Color.Black;
-            this.textUname.Location = new System.Drawing.Point(69, 41);
-            this.textUname.Name = "textUname";
-            this.textUname.PreventEnterBeep = true;
-            this.textUname.Size = new System.Drawing.Size(173, 21);
-            this.textUname.TabIndex = 1;
-            this.textUname.TextChanged += new System.EventHandler(this.textUname_TextChanged);
+            this.txtCompany.Border.Class = "TextBoxBorder";
+            this.txtCompany.Border.CornerType = DevComponents.DotNetBar.eCornerType.Square;
+            this.txtCompany.DisabledBackColor = System.Drawing.Color.White;
+            this.txtCompany.Location = new System.Drawing.Point(69, 41);
+            this.txtCompany.Name = "txtCompany";
+            this.txtCompany.PreventEnterBeep = true;
+            this.txtCompany.Size = new System.Drawing.Size(298, 20);
+            this.txtCompany.TabIndex = 3;
             // 
             // labelX3
             // 
@@ -300,24 +338,20 @@
             this.labelX3.Size = new System.Drawing.Size(56, 23);
             this.labelX3.TabIndex = 5;
             this.labelX3.Text = "code : ";
-            this.labelX3.Click += new System.EventHandler(this.labelX3_Click);
             // 
-            // textPass
-            // 
-            this.textPass.BackColor = System.Drawing.Color.White;
+            // txtPhone
             // 
             // 
             // 
-            this.textPass.Border.Class = "TextBoxBorder";
-            this.textPass.Border.CornerType = DevComponents.DotNetBar.eCornerType.Square;
-            this.textPass.DisabledBackColor = System.Drawing.Color.White;
-            this.textPass.ForeColor = System.Drawing.Color.Black;
-            this.textPass.Location = new System.Drawing.Point(69, 71);
-            this.textPass.Name = "textPass";
-            this.textPass.PreventEnterBeep = true;
-            this.textPass.Size = new System.Drawing.Size(173, 21);
-            this.textPass.TabIndex = 2;
-            this.textPass.TextChanged += new System.EventHandler(this.textPass_TextChanged);
+            // 
+            this.txtPhone.Border.Class = "TextBoxBorder";
+            this.txtPhone.Border.CornerType = DevComponents.DotNetBar.eCornerType.Square;
+            this.txtPhone.DisabledBackColor = System.Drawing.Color.White;
+            this.txtPhone.Location = new System.Drawing.Point(69, 71);
+            this.txtPhone.Name = "txtPhone";
+            this.txtPhone.PreventEnterBeep = true;
+            this.txtPhone.Size = new System.Drawing.Size(298, 20);
+            this.txtPhone.TabIndex = 4;
             // 
             // labelX1
             // 
@@ -330,25 +364,20 @@
             this.labelX1.Name = "labelX1";
             this.labelX1.Size = new System.Drawing.Size(63, 23);
             this.labelX1.TabIndex = 4;
-            this.labelX1.Text = "username :";
-            this.labelX1.Click += new System.EventHandler(this.labelX1_Click);
+            this.labelX1.Text = "company :";
             // 
-            // frmUser
+            // frmsetting
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.CancelButton = this.btnback;
-            this.ClientSize = new System.Drawing.Size(274, 382);
+            this.ClientSize = new System.Drawing.Size(388, 306);
             this.Controls.Add(this.groupPanel1);
-            this.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.MaximizeBox = false;
-            this.Name = "frmUser";
+            this.Name = "frmsetting";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "User definition form";
-            this.Load += new System.EventHandler(this.frmUser_Load);
+            this.Text = "Define specifications";
             this.groupPanel1.ResumeLayout(false);
             this.groupPanel3.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.dgvUser)).EndInit();
             this.groupPanel2.ResumeLayout(false);
             this.ResumeLayout(false);
 
@@ -357,17 +386,20 @@
         #endregion
 
         private DevComponents.DotNetBar.Controls.GroupPanel groupPanel1;
-        private DevComponents.DotNetBar.LabelX labelX1;
-        private DevComponents.DotNetBar.LabelX asdasd;
-        private DevComponents.DotNetBar.Controls.TextBoxX textPass;
-        private DevComponents.DotNetBar.Controls.TextBoxX textUname;
-        private DevComponents.DotNetBar.LabelX lblcode;
-        private DevComponents.DotNetBar.LabelX labelX3;
         private DevComponents.DotNetBar.Controls.GroupPanel groupPanel2;
+        private DevComponents.DotNetBar.LabelX labelX2;
+        private DevComponents.DotNetBar.Controls.TextBoxX txtAddress;
+        private DevComponents.DotNetBar.Controls.TextBoxX txtCode;
+        private DevComponents.DotNetBar.LabelX asdasd;
+        private DevComponents.DotNetBar.Controls.TextBoxX txtCompany;
+        private DevComponents.DotNetBar.LabelX labelX3;
+        private DevComponents.DotNetBar.Controls.TextBoxX txtPhone;
+        private DevComponents.DotNetBar.LabelX labelX1;
         private DevComponents.DotNetBar.Controls.GroupPanel groupPanel3;
-        private DevComponents.DotNetBar.Controls.DataGridViewX dgvUser;
+        private System.Windows.Forms.Button btnEdit;
         private System.Windows.Forms.Button btnback;
         private System.Windows.Forms.Button btndelete;
         private System.Windows.Forms.Button btnsave;
+        private DevComponents.DotNetBar.ButtonX btnS;
     }
 }

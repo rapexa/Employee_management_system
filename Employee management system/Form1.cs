@@ -31,5 +31,10 @@ namespace Employee_management_system
         {
             new frmUser().ShowDialog();
         }
+
+        private void buttonX1_Click(object sender, EventArgs e)
+        {
+            new frmsetting().ShowDialog();
+        }
     }
 }

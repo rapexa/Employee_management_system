@@ -36,6 +36,8 @@
             this.btnsave = new System.Windows.Forms.Button();
             this.expandablePanel1 = new DevComponents.DotNetBar.ExpandablePanel();
             this.btnUser = new DevComponents.DotNetBar.ButtonX();
+            this.btnsetting = new DevComponents.DotNetBar.ButtonX();
+            this.buttonX2 = new DevComponents.DotNetBar.ButtonX();
             this.groupPanel1.SuspendLayout();
             this.groupPanel3.SuspendLayout();
             this.expandablePanel1.SuspendLayout();
@@ -53,7 +55,7 @@
             this.groupPanel1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.groupPanel1.Location = new System.Drawing.Point(0, 0);
             this.groupPanel1.Name = "groupPanel1";
-            this.groupPanel1.Size = new System.Drawing.Size(884, 344);
+            this.groupPanel1.Size = new System.Drawing.Size(941, 451);
             // 
             // 
             // 
@@ -169,13 +171,15 @@
             // 
             this.expandablePanel1.CanvasColor = System.Drawing.SystemColors.Control;
             this.expandablePanel1.ColorSchemeStyle = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled;
+            this.expandablePanel1.Controls.Add(this.buttonX2);
+            this.expandablePanel1.Controls.Add(this.btnsetting);
             this.expandablePanel1.Controls.Add(this.btnUser);
             this.expandablePanel1.DisabledBackColor = System.Drawing.Color.Empty;
             this.expandablePanel1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.expandablePanel1.HideControlsWhenCollapsed = true;
-            this.expandablePanel1.Location = new System.Drawing.Point(623, 6);
+            this.expandablePanel1.Location = new System.Drawing.Point(670, 6);
             this.expandablePanel1.Name = "expandablePanel1";
-            this.expandablePanel1.Size = new System.Drawing.Size(252, 329);
+            this.expandablePanel1.Size = new System.Drawing.Size(262, 436);
             this.expandablePanel1.Style.Alignment = System.Drawing.StringAlignment.Center;
             this.expandablePanel1.Style.BackColor1.ColorSchemePart = DevComponents.DotNetBar.eColorSchemePart.PanelBackground;
             this.expandablePanel1.Style.Border = DevComponents.DotNetBar.eBorderType.SingleLine;
@@ -200,7 +204,7 @@
             this.btnUser.ColorTable = DevComponents.DotNetBar.eButtonColor.OrangeWithBackground;
             this.btnUser.Image = ((System.Drawing.Image)(resources.GetObject("btnUser.Image")));
             this.btnUser.ImagePosition = DevComponents.DotNetBar.eImagePosition.Top;
-            this.btnUser.Location = new System.Drawing.Point(166, 33);
+            this.btnUser.Location = new System.Drawing.Point(177, 34);
             this.btnUser.Name = "btnUser";
             this.btnUser.Size = new System.Drawing.Size(80, 96);
             this.btnUser.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled;
@@ -208,11 +212,40 @@
             this.btnUser.Text = "add user";
             this.btnUser.Click += new System.EventHandler(this.btnUser_Click);
             // 
+            // btnsetting
+            // 
+            this.btnsetting.AccessibleRole = System.Windows.Forms.AccessibleRole.PushButton;
+            this.btnsetting.BackColor = System.Drawing.Color.Transparent;
+            this.btnsetting.ColorTable = DevComponents.DotNetBar.eButtonColor.OrangeWithBackground;
+            this.btnsetting.Image = ((System.Drawing.Image)(resources.GetObject("btnsetting.Image")));
+            this.btnsetting.ImagePosition = DevComponents.DotNetBar.eImagePosition.Top;
+            this.btnsetting.Location = new System.Drawing.Point(91, 34);
+            this.btnsetting.Name = "btnsetting";
+            this.btnsetting.Size = new System.Drawing.Size(80, 96);
+            this.btnsetting.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled;
+            this.btnsetting.TabIndex = 5;
+            this.btnsetting.Text = "setting";
+            this.btnsetting.Click += new System.EventHandler(this.buttonX1_Click);
+            // 
+            // buttonX2
+            // 
+            this.buttonX2.AccessibleRole = System.Windows.Forms.AccessibleRole.PushButton;
+            this.buttonX2.BackColor = System.Drawing.Color.Transparent;
+            this.buttonX2.ColorTable = DevComponents.DotNetBar.eButtonColor.OrangeWithBackground;
+            this.buttonX2.Image = ((System.Drawing.Image)(resources.GetObject("buttonX2.Image")));
+            this.buttonX2.ImagePosition = DevComponents.DotNetBar.eImagePosition.Top;
+            this.buttonX2.Location = new System.Drawing.Point(5, 34);
+            this.buttonX2.Name = "buttonX2";
+            this.buttonX2.Size = new System.Drawing.Size(80, 96);
+            this.buttonX2.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled;
+            this.buttonX2.TabIndex = 6;
+            this.buttonX2.Text = "add user";
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(884, 344);
+            this.ClientSize = new System.Drawing.Size(941, 451);
             this.Controls.Add(this.groupPanel1);
             this.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.MaximizeBox = false;
@@ -236,6 +269,8 @@
         private System.Windows.Forms.Button btnback;
         private System.Windows.Forms.Button btndelete;
         private System.Windows.Forms.Button btnsave;
+        private DevComponents.DotNetBar.ButtonX buttonX2;
+        private DevComponents.DotNetBar.ButtonX btnsetting;
     }
 }
 
