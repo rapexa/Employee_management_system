@@ -31,19 +31,19 @@
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmLogin));
             this.groupPanel1 = new DevComponents.DotNetBar.Controls.GroupPanel();
-            this.labelX1 = new DevComponents.DotNetBar.LabelX();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.btnlogin = new DevComponents.DotNetBar.ButtonX();
+            this.btnclose = new DevComponents.DotNetBar.ButtonX();
+            this.groupPanel2 = new DevComponents.DotNetBar.Controls.GroupPanel();
             this.asdasd = new DevComponents.DotNetBar.LabelX();
             this.textUname = new DevComponents.DotNetBar.Controls.TextBoxX();
             this.textPass = new DevComponents.DotNetBar.Controls.TextBoxX();
             this.labelX2 = new DevComponents.DotNetBar.LabelX();
-            this.groupPanel2 = new DevComponents.DotNetBar.Controls.GroupPanel();
-            this.btnclose = new DevComponents.DotNetBar.ButtonX();
-            this.btnlogin = new DevComponents.DotNetBar.ButtonX();
+            this.labelX1 = new DevComponents.DotNetBar.LabelX();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.styleManager1 = new DevComponents.DotNetBar.StyleManager(this.components);
             this.groupPanel1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.groupPanel2.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // groupPanel1
@@ -91,90 +91,33 @@
             this.groupPanel1.StyleMouseOver.CornerType = DevComponents.DotNetBar.eCornerType.Square;
             this.groupPanel1.TabIndex = 0;
             // 
-            // labelX1
+            // btnlogin
             // 
+            this.btnlogin.AccessibleRole = System.Windows.Forms.AccessibleRole.PushButton;
+            this.btnlogin.ColorTable = DevComponents.DotNetBar.eButtonColor.OrangeWithBackground;
+            this.btnlogin.Image = ((System.Drawing.Image)(resources.GetObject("btnlogin.Image")));
+            this.btnlogin.Location = new System.Drawing.Point(446, 189);
+            this.btnlogin.Name = "btnlogin";
+            this.btnlogin.Size = new System.Drawing.Size(98, 76);
+            this.btnlogin.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled;
+            this.btnlogin.TabIndex = 3;
+            this.btnlogin.Click += new System.EventHandler(this.btnlogin_Click);
             // 
+            // btnclose
             // 
-            // 
-            this.labelX1.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square;
-            this.labelX1.Font = new System.Drawing.Font("Kristen ITC", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelX1.Location = new System.Drawing.Point(256, 19);
-            this.labelX1.Name = "labelX1";
-            this.labelX1.Size = new System.Drawing.Size(491, 55);
-            this.labelX1.TabIndex = 0;
-            this.labelX1.Text = "Employee Management Login Panel";
-            // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(-3, -3);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(283, 283);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox1.TabIndex = 1;
-            this.pictureBox1.TabStop = false;
-            // 
-            // asdasd
-            // 
-            // 
-            // 
-            // 
-            this.asdasd.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square;
-            this.asdasd.Location = new System.Drawing.Point(7, 42);
-            this.asdasd.Name = "asdasd";
-            this.asdasd.Size = new System.Drawing.Size(63, 23);
-            this.asdasd.TabIndex = 3;
-            this.asdasd.Text = "password :";
-            // 
-            // textUname
-            // 
-            this.textUname.BackColor = System.Drawing.Color.White;
-            // 
-            // 
-            // 
-            this.textUname.Border.Class = "TextBoxBorder";
-            this.textUname.Border.CornerType = DevComponents.DotNetBar.eCornerType.Square;
-            this.textUname.DisabledBackColor = System.Drawing.Color.White;
-            this.textUname.ForeColor = System.Drawing.Color.Black;
-            this.textUname.Location = new System.Drawing.Point(73, 16);
-            this.textUname.Name = "textUname";
-            this.textUname.PreventEnterBeep = true;
-            this.textUname.Size = new System.Drawing.Size(173, 21);
-            this.textUname.TabIndex = 1;
-            // 
-            // textPass
-            // 
-            this.textPass.BackColor = System.Drawing.Color.White;
-            // 
-            // 
-            // 
-            this.textPass.Border.Class = "TextBoxBorder";
-            this.textPass.Border.CornerType = DevComponents.DotNetBar.eCornerType.Square;
-            this.textPass.DisabledBackColor = System.Drawing.Color.White;
-            this.textPass.ForeColor = System.Drawing.Color.Black;
-            this.textPass.Location = new System.Drawing.Point(73, 46);
-            this.textPass.Name = "textPass";
-            this.textPass.PasswordChar = '*';
-            this.textPass.PreventEnterBeep = true;
-            this.textPass.Size = new System.Drawing.Size(173, 21);
-            this.textPass.TabIndex = 2;
-            this.textPass.UseSystemPasswordChar = true;
-            // 
-            // labelX2
-            // 
-            // 
-            // 
-            // 
-            this.labelX2.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square;
-            this.labelX2.Location = new System.Drawing.Point(7, 12);
-            this.labelX2.Name = "labelX2";
-            this.labelX2.Size = new System.Drawing.Size(63, 23);
-            this.labelX2.TabIndex = 4;
-            this.labelX2.Text = "username :";
+            this.btnclose.AccessibleRole = System.Windows.Forms.AccessibleRole.PushButton;
+            this.btnclose.ColorTable = DevComponents.DotNetBar.eButtonColor.OrangeWithBackground;
+            this.btnclose.Image = ((System.Drawing.Image)(resources.GetObject("btnclose.Image")));
+            this.btnclose.Location = new System.Drawing.Point(305, 189);
+            this.btnclose.Name = "btnclose";
+            this.btnclose.Size = new System.Drawing.Size(98, 76);
+            this.btnclose.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled;
+            this.btnclose.TabIndex = 4;
+            this.btnclose.Click += new System.EventHandler(this.btnclose_Click);
             // 
             // groupPanel2
             // 
-            this.groupPanel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(239)))), ((int)(((byte)(239)))), ((int)(((byte)(242)))));
+            this.groupPanel2.BackColor = System.Drawing.Color.Transparent;
             this.groupPanel2.CanvasColor = System.Drawing.SystemColors.Control;
             this.groupPanel2.ColorSchemeStyle = DevComponents.DotNetBar.eDotNetBarStyle.Office2007;
             this.groupPanel2.Controls.Add(this.asdasd);
@@ -216,33 +159,88 @@
             this.groupPanel2.TabIndex = 0;
             this.groupPanel2.Text = "Please enter the information";
             // 
-            // btnclose
+            // asdasd
             // 
-            this.btnclose.AccessibleRole = System.Windows.Forms.AccessibleRole.PushButton;
-            this.btnclose.ColorTable = DevComponents.DotNetBar.eButtonColor.OrangeWithBackground;
-            this.btnclose.Image = ((System.Drawing.Image)(resources.GetObject("btnclose.Image")));
-            this.btnclose.Location = new System.Drawing.Point(305, 189);
-            this.btnclose.Name = "btnclose";
-            this.btnclose.Size = new System.Drawing.Size(98, 76);
-            this.btnclose.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled;
-            this.btnclose.TabIndex = 4;
-            this.btnclose.Click += new System.EventHandler(this.btnclose_Click);
+            this.asdasd.BackColor = System.Drawing.Color.Transparent;
             // 
-            // btnlogin
             // 
-            this.btnlogin.AccessibleRole = System.Windows.Forms.AccessibleRole.PushButton;
-            this.btnlogin.ColorTable = DevComponents.DotNetBar.eButtonColor.OrangeWithBackground;
-            this.btnlogin.Image = ((System.Drawing.Image)(resources.GetObject("btnlogin.Image")));
-            this.btnlogin.Location = new System.Drawing.Point(446, 189);
-            this.btnlogin.Name = "btnlogin";
-            this.btnlogin.Size = new System.Drawing.Size(98, 76);
-            this.btnlogin.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled;
-            this.btnlogin.TabIndex = 3;
-            this.btnlogin.Click += new System.EventHandler(this.btnlogin_Click);
+            // 
+            this.asdasd.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square;
+            this.asdasd.Location = new System.Drawing.Point(7, 42);
+            this.asdasd.Name = "asdasd";
+            this.asdasd.Size = new System.Drawing.Size(63, 23);
+            this.asdasd.TabIndex = 3;
+            this.asdasd.Text = "password :";
+            // 
+            // textUname
+            // 
+            // 
+            // 
+            // 
+            this.textUname.Border.Class = "TextBoxBorder";
+            this.textUname.Border.CornerType = DevComponents.DotNetBar.eCornerType.Square;
+            this.textUname.DisabledBackColor = System.Drawing.Color.White;
+            this.textUname.Location = new System.Drawing.Point(73, 16);
+            this.textUname.Name = "textUname";
+            this.textUname.PreventEnterBeep = true;
+            this.textUname.Size = new System.Drawing.Size(173, 21);
+            this.textUname.TabIndex = 1;
+            // 
+            // textPass
+            // 
+            // 
+            // 
+            // 
+            this.textPass.Border.Class = "TextBoxBorder";
+            this.textPass.Border.CornerType = DevComponents.DotNetBar.eCornerType.Square;
+            this.textPass.DisabledBackColor = System.Drawing.Color.White;
+            this.textPass.Location = new System.Drawing.Point(73, 46);
+            this.textPass.Name = "textPass";
+            this.textPass.PasswordChar = '*';
+            this.textPass.PreventEnterBeep = true;
+            this.textPass.Size = new System.Drawing.Size(173, 21);
+            this.textPass.TabIndex = 2;
+            this.textPass.UseSystemPasswordChar = true;
+            // 
+            // labelX2
+            // 
+            this.labelX2.BackColor = System.Drawing.Color.Transparent;
+            // 
+            // 
+            // 
+            this.labelX2.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square;
+            this.labelX2.Location = new System.Drawing.Point(7, 12);
+            this.labelX2.Name = "labelX2";
+            this.labelX2.Size = new System.Drawing.Size(63, 23);
+            this.labelX2.TabIndex = 4;
+            this.labelX2.Text = "username :";
+            // 
+            // labelX1
+            // 
+            // 
+            // 
+            // 
+            this.labelX1.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square;
+            this.labelX1.Font = new System.Drawing.Font("Kristen ITC", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelX1.Location = new System.Drawing.Point(256, 19);
+            this.labelX1.Name = "labelX1";
+            this.labelX1.Size = new System.Drawing.Size(491, 55);
+            this.labelX1.TabIndex = 0;
+            this.labelX1.Text = "Employee Management Login Panel";
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
+            this.pictureBox1.Location = new System.Drawing.Point(-3, -3);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(283, 283);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox1.TabIndex = 1;
+            this.pictureBox1.TabStop = false;
             // 
             // styleManager1
             // 
-            this.styleManager1.ManagerStyle = DevComponents.DotNetBar.eStyle.VisualStudio2012Light;
+            this.styleManager1.ManagerStyle = DevComponents.DotNetBar.eStyle.Office2010Blue;
             this.styleManager1.MetroColorParameters = new DevComponents.DotNetBar.Metro.ColorTables.MetroColorGeneratorParameters(System.Drawing.Color.FromArgb(((int)(((byte)(239)))), ((int)(((byte)(239)))), ((int)(((byte)(242))))), System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(122)))), ((int)(((byte)(204))))));
             // 
             // frmLogin
@@ -258,8 +256,8 @@
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "LOGIN";
             this.groupPanel1.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.groupPanel2.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
 
         }
