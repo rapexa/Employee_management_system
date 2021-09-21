@@ -25,7 +25,8 @@ namespace Employee_management_system
                 if (pr.Value == 100)
                 {
                     timer1.Stop();
-                    new Form1().ShowDialog();
+                    this.Hide();
+                    new frmLogin().ShowDialog();
                     this.Close();
                 }
             }
@@ -33,6 +34,11 @@ namespace Employee_management_system
             {
 
             }
+        }
+
+        private void pictureBox1_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }
