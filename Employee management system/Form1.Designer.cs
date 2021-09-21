@@ -31,8 +31,8 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             this.groupPanel1 = new DevComponents.DotNetBar.Controls.GroupPanel();
             this.groupPanel3 = new DevComponents.DotNetBar.Controls.GroupPanel();
-            this.btndelete = new System.Windows.Forms.Button();
-            this.btnsave = new System.Windows.Forms.Button();
+            this.btn_backup = new System.Windows.Forms.Button();
+            this.btn_restore = new System.Windows.Forms.Button();
             this.expandablePanel1 = new DevComponents.DotNetBar.ExpandablePanel();
             this.btn_def_jobs = new DevComponents.DotNetBar.ButtonX();
             this.btnsetting = new DevComponents.DotNetBar.ButtonX();
@@ -107,8 +107,8 @@
             this.groupPanel3.BackColor = System.Drawing.Color.Transparent;
             this.groupPanel3.CanvasColor = System.Drawing.SystemColors.Control;
             this.groupPanel3.ColorSchemeStyle = DevComponents.DotNetBar.eDotNetBarStyle.Office2007;
-            this.groupPanel3.Controls.Add(this.btndelete);
-            this.groupPanel3.Controls.Add(this.btnsave);
+            this.groupPanel3.Controls.Add(this.btn_backup);
+            this.groupPanel3.Controls.Add(this.btn_restore);
             this.groupPanel3.DisabledBackColor = System.Drawing.Color.Empty;
             this.groupPanel3.Location = new System.Drawing.Point(396, 460);
             this.groupPanel3.Name = "groupPanel3";
@@ -143,31 +143,31 @@
             this.groupPanel3.StyleMouseOver.CornerType = DevComponents.DotNetBar.eCornerType.Square;
             this.groupPanel3.TabIndex = 4;
             // 
-            // btndelete
+            // btn_backup
             // 
-            this.btndelete.BackColor = System.Drawing.Color.Transparent;
-            this.btndelete.Image = ((System.Drawing.Image)(resources.GetObject("btndelete.Image")));
-            this.btndelete.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.btndelete.Location = new System.Drawing.Point(172, 1);
-            this.btndelete.Name = "btndelete";
-            this.btndelete.Size = new System.Drawing.Size(170, 34);
-            this.btndelete.TabIndex = 5;
-            this.btndelete.Text = "delete";
-            this.btndelete.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btndelete.UseVisualStyleBackColor = false;
+            this.btn_backup.BackColor = System.Drawing.Color.Transparent;
+            this.btn_backup.Image = ((System.Drawing.Image)(resources.GetObject("btn_backup.Image")));
+            this.btn_backup.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btn_backup.Location = new System.Drawing.Point(172, 1);
+            this.btn_backup.Name = "btn_backup";
+            this.btn_backup.Size = new System.Drawing.Size(170, 34);
+            this.btn_backup.TabIndex = 5;
+            this.btn_backup.Text = "backup";
+            this.btn_backup.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btn_backup.UseVisualStyleBackColor = false;
             // 
-            // btnsave
+            // btn_restore
             // 
-            this.btnsave.BackColor = System.Drawing.Color.Transparent;
-            this.btnsave.Image = ((System.Drawing.Image)(resources.GetObject("btnsave.Image")));
-            this.btnsave.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.btnsave.Location = new System.Drawing.Point(0, 1);
-            this.btnsave.Name = "btnsave";
-            this.btnsave.Size = new System.Drawing.Size(170, 34);
-            this.btnsave.TabIndex = 4;
-            this.btnsave.Text = "save";
-            this.btnsave.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnsave.UseVisualStyleBackColor = false;
+            this.btn_restore.BackColor = System.Drawing.Color.Transparent;
+            this.btn_restore.Image = ((System.Drawing.Image)(resources.GetObject("btn_restore.Image")));
+            this.btn_restore.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btn_restore.Location = new System.Drawing.Point(0, 1);
+            this.btn_restore.Name = "btn_restore";
+            this.btn_restore.Size = new System.Drawing.Size(170, 34);
+            this.btn_restore.TabIndex = 4;
+            this.btn_restore.Text = "resote";
+            this.btn_restore.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btn_restore.UseVisualStyleBackColor = false;
             // 
             // expandablePanel1
             // 
@@ -476,8 +476,8 @@
         private DevComponents.DotNetBar.ExpandablePanel expandablePanel1;
         private DevComponents.DotNetBar.ButtonX btnUser;
         private DevComponents.DotNetBar.Controls.GroupPanel groupPanel3;
-        private System.Windows.Forms.Button btndelete;
-        private System.Windows.Forms.Button btnsave;
+        private System.Windows.Forms.Button btn_backup;
+        private System.Windows.Forms.Button btn_restore;
         private DevComponents.DotNetBar.ButtonX btn_def_jobs;
         private DevComponents.DotNetBar.ButtonX btnsetting;
         private System.Windows.Forms.PictureBox pictureBox1;
