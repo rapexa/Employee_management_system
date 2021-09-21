@@ -36,5 +36,15 @@ namespace Employee_management_system
         {
             new frmsetting().ShowDialog();
         }
+
+        private void groupPanel1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btn_req_leave_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

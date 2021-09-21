@@ -40,5 +40,15 @@ namespace Employee_management_system
         {
 
         }
+
+        private void labelX1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void labelX2_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
