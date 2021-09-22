@@ -390,7 +390,7 @@
             this.btn_list_jobs.ImagePosition = DevComponents.DotNetBar.eImagePosition.Top;
             this.btn_list_jobs.Location = new System.Drawing.Point(4, 37);
             this.btn_list_jobs.Name = "btn_list_jobs";
-            this.btn_list_jobs.Size = new System.Drawing.Size(80, 96);
+            this.btn_list_jobs.Size = new System.Drawing.Size(80, 93);
             this.btn_list_jobs.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled;
             this.btn_list_jobs.TabIndex = 8;
             this.btn_list_jobs.Text = "List of jobs";

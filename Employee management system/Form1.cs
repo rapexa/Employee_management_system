@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Data.SqlClient;
 
 namespace Employee_management_system
 {
@@ -16,6 +17,9 @@ namespace Employee_management_system
         {
             InitializeComponent();
         }
+
+        SqlConnection con = new SqlConnection("Data source=(local);initial catalog=EmployeeDB; integrated security = true");
+        SqlCommand cmd = new SqlCommand();
 
         private void Form1_Load(object sender, EventArgs e)
         {
