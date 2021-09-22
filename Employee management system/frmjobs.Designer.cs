@@ -1,6 +1,6 @@
 ﻿namespace Employee_management_system
 {
-    partial class frmsetting
+    partial class frmjobs
     {
         /// <summary>
         /// Required designer variable.
@@ -28,7 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmsetting));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmjobs));
             this.groupPanel1 = new DevComponents.DotNetBar.Controls.GroupPanel();
             this.groupPanel3 = new DevComponents.DotNetBar.Controls.GroupPanel();
             this.btnEdit = new System.Windows.Forms.Button();
@@ -38,12 +38,12 @@
             this.groupPanel2 = new DevComponents.DotNetBar.Controls.GroupPanel();
             this.btnS = new DevComponents.DotNetBar.ButtonX();
             this.labelX2 = new DevComponents.DotNetBar.LabelX();
-            this.txtAddress = new DevComponents.DotNetBar.Controls.TextBoxX();
+            this.txt_etc = new DevComponents.DotNetBar.Controls.TextBoxX();
             this.txtCode = new DevComponents.DotNetBar.Controls.TextBoxX();
             this.asdasd = new DevComponents.DotNetBar.LabelX();
-            this.txtCompany = new DevComponents.DotNetBar.Controls.TextBoxX();
+            this.txt_job_name = new DevComponents.DotNetBar.Controls.TextBoxX();
             this.labelX3 = new DevComponents.DotNetBar.LabelX();
-            this.txtPhone = new DevComponents.DotNetBar.Controls.TextBoxX();
+            this.txt_payroll = new DevComponents.DotNetBar.Controls.TextBoxX();
             this.labelX1 = new DevComponents.DotNetBar.LabelX();
             this.groupPanel1.SuspendLayout();
             this.groupPanel3.SuspendLayout();
@@ -91,7 +91,6 @@
             // 
             this.groupPanel1.StyleMouseOver.CornerType = DevComponents.DotNetBar.eCornerType.Square;
             this.groupPanel1.TabIndex = 0;
-            this.groupPanel1.Click += new System.EventHandler(this.groupPanel1_Click);
             // 
             // groupPanel3
             // 
@@ -103,7 +102,7 @@
             this.groupPanel3.Controls.Add(this.btndelete);
             this.groupPanel3.Controls.Add(this.btnsave);
             this.groupPanel3.DisabledBackColor = System.Drawing.Color.Empty;
-            this.groupPanel3.Location = new System.Drawing.Point(3, 259);
+            this.groupPanel3.Location = new System.Drawing.Point(3, 257);
             this.groupPanel3.Name = "groupPanel3";
             this.groupPanel3.Size = new System.Drawing.Size(376, 42);
             // 
@@ -144,7 +143,7 @@
             this.btnEdit.ImageAlign = System.Drawing.ContentAlignment.BottomRight;
             this.btnEdit.Location = new System.Drawing.Point(97, 1);
             this.btnEdit.Name = "btnEdit";
-            this.btnEdit.Size = new System.Drawing.Size(83, 34);
+            this.btnEdit.Size = new System.Drawing.Size(83, 33);
             this.btnEdit.TabIndex = 8;
             this.btnEdit.Text = "Edit";
             this.btnEdit.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -157,9 +156,9 @@
             this.btnback.DialogResult = System.Windows.Forms.DialogResult.Cancel;
             this.btnback.Image = ((System.Drawing.Image)(resources.GetObject("btnback.Image")));
             this.btnback.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.btnback.Location = new System.Drawing.Point(284, 1);
+            this.btnback.Location = new System.Drawing.Point(283, 1);
             this.btnback.Name = "btnback";
-            this.btnback.Size = new System.Drawing.Size(83, 34);
+            this.btnback.Size = new System.Drawing.Size(83, 33);
             this.btnback.TabIndex = 10;
             this.btnback.Text = "back";
             this.btnback.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -173,7 +172,7 @@
             this.btndelete.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btndelete.Location = new System.Drawing.Point(190, 1);
             this.btndelete.Name = "btndelete";
-            this.btndelete.Size = new System.Drawing.Size(83, 34);
+            this.btndelete.Size = new System.Drawing.Size(83, 33);
             this.btndelete.TabIndex = 9;
             this.btndelete.Text = "delete";
             this.btndelete.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -187,7 +186,7 @@
             this.btnsave.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnsave.Location = new System.Drawing.Point(3, 1);
             this.btnsave.Name = "btnsave";
-            this.btnsave.Size = new System.Drawing.Size(83, 34);
+            this.btnsave.Size = new System.Drawing.Size(83, 33);
             this.btnsave.TabIndex = 7;
             this.btnsave.Text = "save";
             this.btnsave.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -201,15 +200,15 @@
             this.groupPanel2.ColorSchemeStyle = DevComponents.DotNetBar.eDotNetBarStyle.Office2007;
             this.groupPanel2.Controls.Add(this.btnS);
             this.groupPanel2.Controls.Add(this.labelX2);
-            this.groupPanel2.Controls.Add(this.txtAddress);
+            this.groupPanel2.Controls.Add(this.txt_etc);
             this.groupPanel2.Controls.Add(this.txtCode);
             this.groupPanel2.Controls.Add(this.asdasd);
-            this.groupPanel2.Controls.Add(this.txtCompany);
+            this.groupPanel2.Controls.Add(this.txt_job_name);
             this.groupPanel2.Controls.Add(this.labelX3);
-            this.groupPanel2.Controls.Add(this.txtPhone);
+            this.groupPanel2.Controls.Add(this.txt_payroll);
             this.groupPanel2.Controls.Add(this.labelX1);
             this.groupPanel2.DisabledBackColor = System.Drawing.Color.Empty;
-            this.groupPanel2.Location = new System.Drawing.Point(3, 3);
+            this.groupPanel2.Location = new System.Drawing.Point(3, 1);
             this.groupPanel2.Name = "groupPanel2";
             this.groupPanel2.Size = new System.Drawing.Size(376, 250);
             // 
@@ -266,23 +265,24 @@
             this.labelX2.Name = "labelX2";
             this.labelX2.Size = new System.Drawing.Size(63, 23);
             this.labelX2.TabIndex = 8;
-            this.labelX2.Text = "Address :";
+            this.labelX2.Text = "Etc :";
+            this.labelX2.Click += new System.EventHandler(this.labelX2_Click);
             // 
-            // txtAddress
+            // txt_etc
             // 
             // 
             // 
             // 
-            this.txtAddress.Border.Class = "TextBoxBorder";
-            this.txtAddress.Border.CornerType = DevComponents.DotNetBar.eCornerType.Square;
-            this.txtAddress.DisabledBackColor = System.Drawing.Color.White;
-            this.txtAddress.Location = new System.Drawing.Point(69, 103);
-            this.txtAddress.Multiline = true;
-            this.txtAddress.Name = "txtAddress";
-            this.txtAddress.PreventEnterBeep = true;
-            this.txtAddress.ScrollBars = System.Windows.Forms.ScrollBars.Both;
-            this.txtAddress.Size = new System.Drawing.Size(298, 121);
-            this.txtAddress.TabIndex = 5;
+            this.txt_etc.Border.Class = "TextBoxBorder";
+            this.txt_etc.Border.CornerType = DevComponents.DotNetBar.eCornerType.Square;
+            this.txt_etc.DisabledBackColor = System.Drawing.Color.White;
+            this.txt_etc.Location = new System.Drawing.Point(69, 103);
+            this.txt_etc.Multiline = true;
+            this.txt_etc.Name = "txt_etc";
+            this.txt_etc.PreventEnterBeep = true;
+            this.txt_etc.ScrollBars = System.Windows.Forms.ScrollBars.Both;
+            this.txt_etc.Size = new System.Drawing.Size(297, 121);
+            this.txt_etc.TabIndex = 5;
             // 
             // txtCode
             // 
@@ -295,9 +295,8 @@
             this.txtCode.Location = new System.Drawing.Point(69, 10);
             this.txtCode.Name = "txtCode";
             this.txtCode.PreventEnterBeep = true;
-            this.txtCode.Size = new System.Drawing.Size(217, 20);
+            this.txtCode.Size = new System.Drawing.Size(217, 21);
             this.txtCode.TabIndex = 1;
-            this.txtCode.TextChanged += new System.EventHandler(this.txtCode_TextChanged);
             // 
             // asdasd
             // 
@@ -306,25 +305,26 @@
             // 
             // 
             this.asdasd.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square;
+            this.asdasd.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F);
             this.asdasd.Location = new System.Drawing.Point(3, 67);
             this.asdasd.Name = "asdasd";
             this.asdasd.Size = new System.Drawing.Size(63, 23);
             this.asdasd.TabIndex = 3;
-            this.asdasd.Text = "Phone Call :";
+            this.asdasd.Text = "Payment :";
             // 
-            // txtCompany
-            // 
-            // 
+            // txt_job_name
             // 
             // 
-            this.txtCompany.Border.Class = "TextBoxBorder";
-            this.txtCompany.Border.CornerType = DevComponents.DotNetBar.eCornerType.Square;
-            this.txtCompany.DisabledBackColor = System.Drawing.Color.White;
-            this.txtCompany.Location = new System.Drawing.Point(69, 41);
-            this.txtCompany.Name = "txtCompany";
-            this.txtCompany.PreventEnterBeep = true;
-            this.txtCompany.Size = new System.Drawing.Size(298, 20);
-            this.txtCompany.TabIndex = 3;
+            // 
+            // 
+            this.txt_job_name.Border.Class = "TextBoxBorder";
+            this.txt_job_name.Border.CornerType = DevComponents.DotNetBar.eCornerType.Square;
+            this.txt_job_name.DisabledBackColor = System.Drawing.Color.White;
+            this.txt_job_name.Location = new System.Drawing.Point(69, 42);
+            this.txt_job_name.Name = "txt_job_name";
+            this.txt_job_name.PreventEnterBeep = true;
+            this.txt_job_name.Size = new System.Drawing.Size(297, 21);
+            this.txt_job_name.TabIndex = 3;
             // 
             // labelX3
             // 
@@ -339,19 +339,19 @@
             this.labelX3.TabIndex = 5;
             this.labelX3.Text = "code : ";
             // 
-            // txtPhone
+            // txt_payroll
             // 
             // 
             // 
             // 
-            this.txtPhone.Border.Class = "TextBoxBorder";
-            this.txtPhone.Border.CornerType = DevComponents.DotNetBar.eCornerType.Square;
-            this.txtPhone.DisabledBackColor = System.Drawing.Color.White;
-            this.txtPhone.Location = new System.Drawing.Point(69, 71);
-            this.txtPhone.Name = "txtPhone";
-            this.txtPhone.PreventEnterBeep = true;
-            this.txtPhone.Size = new System.Drawing.Size(298, 20);
-            this.txtPhone.TabIndex = 4;
+            this.txt_payroll.Border.Class = "TextBoxBorder";
+            this.txt_payroll.Border.CornerType = DevComponents.DotNetBar.eCornerType.Square;
+            this.txt_payroll.DisabledBackColor = System.Drawing.Color.White;
+            this.txt_payroll.Location = new System.Drawing.Point(69, 72);
+            this.txt_payroll.Name = "txt_payroll";
+            this.txt_payroll.PreventEnterBeep = true;
+            this.txt_payroll.Size = new System.Drawing.Size(297, 21);
+            this.txt_payroll.TabIndex = 4;
             // 
             // labelX1
             // 
@@ -364,19 +364,21 @@
             this.labelX1.Name = "labelX1";
             this.labelX1.Size = new System.Drawing.Size(63, 23);
             this.labelX1.TabIndex = 4;
-            this.labelX1.Text = "company :";
+            this.labelX1.Text = "Job Name :";
+            this.labelX1.Click += new System.EventHandler(this.labelX1_Click);
             // 
-            // frmsetting
+            // frmjobs
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.CancelButton = this.btnback;
             this.ClientSize = new System.Drawing.Size(388, 306);
             this.Controls.Add(this.groupPanel1);
-            this.Name = "frmsetting";
+            this.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.MaximizeBox = false;
+            this.Name = "frmjobs";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Define specifications";
-            this.Load += new System.EventHandler(this.frmsetting_Load);
+            this.Text = "Defining jobs";
+            this.Load += new System.EventHandler(this.frmjobs_Load);
             this.groupPanel1.ResumeLayout(false);
             this.groupPanel3.ResumeLayout(false);
             this.groupPanel2.ResumeLayout(false);
@@ -387,20 +389,20 @@
         #endregion
 
         private DevComponents.DotNetBar.Controls.GroupPanel groupPanel1;
-        private DevComponents.DotNetBar.Controls.GroupPanel groupPanel2;
-        private DevComponents.DotNetBar.LabelX labelX2;
-        private DevComponents.DotNetBar.Controls.TextBoxX txtAddress;
-        private DevComponents.DotNetBar.Controls.TextBoxX txtCode;
-        private DevComponents.DotNetBar.LabelX asdasd;
-        private DevComponents.DotNetBar.Controls.TextBoxX txtCompany;
-        private DevComponents.DotNetBar.LabelX labelX3;
-        private DevComponents.DotNetBar.Controls.TextBoxX txtPhone;
-        private DevComponents.DotNetBar.LabelX labelX1;
         private DevComponents.DotNetBar.Controls.GroupPanel groupPanel3;
         private System.Windows.Forms.Button btnEdit;
         private System.Windows.Forms.Button btnback;
         private System.Windows.Forms.Button btndelete;
         private System.Windows.Forms.Button btnsave;
+        private DevComponents.DotNetBar.Controls.GroupPanel groupPanel2;
         private DevComponents.DotNetBar.ButtonX btnS;
+        private DevComponents.DotNetBar.LabelX labelX2;
+        private DevComponents.DotNetBar.Controls.TextBoxX txt_etc;
+        private DevComponents.DotNetBar.Controls.TextBoxX txtCode;
+        private DevComponents.DotNetBar.LabelX asdasd;
+        private DevComponents.DotNetBar.Controls.TextBoxX txt_job_name;
+        private DevComponents.DotNetBar.LabelX labelX3;
+        private DevComponents.DotNetBar.Controls.TextBoxX txt_payroll;
+        private DevComponents.DotNetBar.LabelX labelX1;
     }
 }

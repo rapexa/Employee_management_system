@@ -66,6 +66,18 @@
     <Compile Include="Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
+    <Compile Include="frmjobs.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmjobs.Designer.cs">
+      <DependentUpon>frmjobs.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmListJobs.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmListJobs.Designer.cs">
+      <DependentUpon>FrmListJobs.cs</DependentUpon>
+    </Compile>
     <Compile Include="FrmLoading.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -94,6 +106,9 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmjobs.resx">
+      <DependentUpon>frmjobs.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FrmLoading.resx">
       <DependentUpon>FrmLoading.cs</DependentUpon>

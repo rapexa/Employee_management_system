@@ -34,23 +34,23 @@
             this.btn_backup = new System.Windows.Forms.Button();
             this.btn_restore = new System.Windows.Forms.Button();
             this.expandablePanel1 = new DevComponents.DotNetBar.ExpandablePanel();
-            this.btn_def_jobs = new DevComponents.DotNetBar.ButtonX();
-            this.btnsetting = new DevComponents.DotNetBar.ButtonX();
-            this.btnUser = new DevComponents.DotNetBar.ButtonX();
+            this.btn_about = new DevComponents.DotNetBar.ButtonX();
+            this.btn_incetive = new DevComponents.DotNetBar.ButtonX();
+            this.btn_checks_report = new DevComponents.DotNetBar.ButtonX();
+            this.btn_payroll = new DevComponents.DotNetBar.ButtonX();
+            this.btn_salery = new DevComponents.DotNetBar.ButtonX();
+            this.btn_checks = new DevComponents.DotNetBar.ButtonX();
+            this.btn_leave_reports = new DevComponents.DotNetBar.ButtonX();
+            this.btn_req_leave = new DevComponents.DotNetBar.ButtonX();
+            this.btn_letters = new DevComponents.DotNetBar.ButtonX();
             this.btn_list_employee = new DevComponents.DotNetBar.ButtonX();
             this.btn_def_employee = new DevComponents.DotNetBar.ButtonX();
             this.btn_workspace = new DevComponents.DotNetBar.ButtonX();
             this.btn_list_jobs = new DevComponents.DotNetBar.ButtonX();
-            this.btn_payroll = new DevComponents.DotNetBar.ButtonX();
-            this.btn_salery = new DevComponents.DotNetBar.ButtonX();
-            this.btn_leave_reports = new DevComponents.DotNetBar.ButtonX();
-            this.btn_req_leave = new DevComponents.DotNetBar.ButtonX();
-            this.btn_incetive = new DevComponents.DotNetBar.ButtonX();
-            this.btn_checks_report = new DevComponents.DotNetBar.ButtonX();
-            this.btn_checks = new DevComponents.DotNetBar.ButtonX();
-            this.btn_letters = new DevComponents.DotNetBar.ButtonX();
+            this.btn_def_jobs = new DevComponents.DotNetBar.ButtonX();
+            this.btnsetting = new DevComponents.DotNetBar.ButtonX();
+            this.btnUser = new DevComponents.DotNetBar.ButtonX();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.btn_about = new DevComponents.DotNetBar.ButtonX();
             this.groupPanel1.SuspendLayout();
             this.groupPanel3.SuspendLayout();
             this.expandablePanel1.SuspendLayout();
@@ -212,49 +212,132 @@
             this.expandablePanel1.TitleText = "Main operation";
             this.expandablePanel1.Click += new System.EventHandler(this.expandablePanel1_Click);
             // 
-            // btn_def_jobs
+            // btn_about
             // 
-            this.btn_def_jobs.AccessibleRole = System.Windows.Forms.AccessibleRole.PushButton;
-            this.btn_def_jobs.BackColor = System.Drawing.Color.Transparent;
-            this.btn_def_jobs.ColorTable = DevComponents.DotNetBar.eButtonColor.OrangeWithBackground;
-            this.btn_def_jobs.Image = ((System.Drawing.Image)(resources.GetObject("btn_def_jobs.Image")));
-            this.btn_def_jobs.ImagePosition = DevComponents.DotNetBar.eImagePosition.Top;
-            this.btn_def_jobs.Location = new System.Drawing.Point(90, 34);
-            this.btn_def_jobs.Name = "btn_def_jobs";
-            this.btn_def_jobs.Size = new System.Drawing.Size(80, 96);
-            this.btn_def_jobs.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled;
-            this.btn_def_jobs.TabIndex = 6;
-            this.btn_def_jobs.Text = "Defining jobs";
+            this.btn_about.AccessibleRole = System.Windows.Forms.AccessibleRole.PushButton;
+            this.btn_about.BackColor = System.Drawing.Color.Transparent;
+            this.btn_about.ColorTable = DevComponents.DotNetBar.eButtonColor.OrangeWithBackground;
+            this.btn_about.Image = ((System.Drawing.Image)(resources.GetObject("btn_about.Image")));
+            this.btn_about.ImagePosition = DevComponents.DotNetBar.eImagePosition.Top;
+            this.btn_about.Location = new System.Drawing.Point(4, 340);
+            this.btn_about.Name = "btn_about";
+            this.btn_about.Size = new System.Drawing.Size(80, 96);
+            this.btn_about.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled;
+            this.btn_about.TabIndex = 21;
+            this.btn_about.Text = "About us";
             // 
-            // btnsetting
+            // btn_incetive
             // 
-            this.btnsetting.AccessibleRole = System.Windows.Forms.AccessibleRole.PushButton;
-            this.btnsetting.BackColor = System.Drawing.Color.Transparent;
-            this.btnsetting.ColorTable = DevComponents.DotNetBar.eButtonColor.OrangeWithBackground;
-            this.btnsetting.Image = ((System.Drawing.Image)(resources.GetObject("btnsetting.Image")));
-            this.btnsetting.ImagePosition = DevComponents.DotNetBar.eImagePosition.Top;
-            this.btnsetting.Location = new System.Drawing.Point(176, 34);
-            this.btnsetting.Name = "btnsetting";
-            this.btnsetting.Size = new System.Drawing.Size(80, 96);
-            this.btnsetting.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled;
-            this.btnsetting.TabIndex = 5;
-            this.btnsetting.Text = "setting";
-            this.btnsetting.Click += new System.EventHandler(this.buttonX1_Click);
+            this.btn_incetive.AccessibleRole = System.Windows.Forms.AccessibleRole.PushButton;
+            this.btn_incetive.BackColor = System.Drawing.Color.Transparent;
+            this.btn_incetive.ColorTable = DevComponents.DotNetBar.eButtonColor.OrangeWithBackground;
+            this.btn_incetive.Image = ((System.Drawing.Image)(resources.GetObject("btn_incetive.Image")));
+            this.btn_incetive.ImagePosition = DevComponents.DotNetBar.eImagePosition.Top;
+            this.btn_incetive.Location = new System.Drawing.Point(262, 340);
+            this.btn_incetive.Name = "btn_incetive";
+            this.btn_incetive.Size = new System.Drawing.Size(80, 96);
+            this.btn_incetive.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled;
+            this.btn_incetive.TabIndex = 19;
+            this.btn_incetive.Text = "Incentive money";
             // 
-            // btnUser
+            // btn_checks_report
             // 
-            this.btnUser.AccessibleRole = System.Windows.Forms.AccessibleRole.PushButton;
-            this.btnUser.BackColor = System.Drawing.Color.Transparent;
-            this.btnUser.ColorTable = DevComponents.DotNetBar.eButtonColor.OrangeWithBackground;
-            this.btnUser.Image = ((System.Drawing.Image)(resources.GetObject("btnUser.Image")));
-            this.btnUser.ImagePosition = DevComponents.DotNetBar.eImagePosition.Top;
-            this.btnUser.Location = new System.Drawing.Point(262, 34);
-            this.btnUser.Name = "btnUser";
-            this.btnUser.Size = new System.Drawing.Size(80, 96);
-            this.btnUser.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled;
-            this.btnUser.TabIndex = 4;
-            this.btnUser.Text = "add user";
-            this.btnUser.Click += new System.EventHandler(this.btnUser_Click);
+            this.btn_checks_report.AccessibleRole = System.Windows.Forms.AccessibleRole.PushButton;
+            this.btn_checks_report.BackColor = System.Drawing.Color.Transparent;
+            this.btn_checks_report.ColorTable = DevComponents.DotNetBar.eButtonColor.OrangeWithBackground;
+            this.btn_checks_report.Image = ((System.Drawing.Image)(resources.GetObject("btn_checks_report.Image")));
+            this.btn_checks_report.ImagePosition = DevComponents.DotNetBar.eImagePosition.Top;
+            this.btn_checks_report.Location = new System.Drawing.Point(90, 340);
+            this.btn_checks_report.Name = "btn_checks_report";
+            this.btn_checks_report.Size = new System.Drawing.Size(80, 96);
+            this.btn_checks_report.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled;
+            this.btn_checks_report.TabIndex = 18;
+            this.btn_checks_report.Text = "Check-in/out reports";
+            // 
+            // btn_payroll
+            // 
+            this.btn_payroll.AccessibleRole = System.Windows.Forms.AccessibleRole.PushButton;
+            this.btn_payroll.BackColor = System.Drawing.Color.Transparent;
+            this.btn_payroll.ColorTable = DevComponents.DotNetBar.eButtonColor.OrangeWithBackground;
+            this.btn_payroll.Image = ((System.Drawing.Image)(resources.GetObject("btn_payroll.Image")));
+            this.btn_payroll.ImagePosition = DevComponents.DotNetBar.eImagePosition.Top;
+            this.btn_payroll.Location = new System.Drawing.Point(3, 238);
+            this.btn_payroll.Name = "btn_payroll";
+            this.btn_payroll.Size = new System.Drawing.Size(80, 96);
+            this.btn_payroll.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled;
+            this.btn_payroll.TabIndex = 15;
+            this.btn_payroll.Text = "Payroll report";
+            // 
+            // btn_salery
+            // 
+            this.btn_salery.AccessibleRole = System.Windows.Forms.AccessibleRole.PushButton;
+            this.btn_salery.BackColor = System.Drawing.Color.Transparent;
+            this.btn_salery.ColorTable = DevComponents.DotNetBar.eButtonColor.OrangeWithBackground;
+            this.btn_salery.Image = ((System.Drawing.Image)(resources.GetObject("btn_salery.Image")));
+            this.btn_salery.ImagePosition = DevComponents.DotNetBar.eImagePosition.Top;
+            this.btn_salery.Location = new System.Drawing.Point(89, 238);
+            this.btn_salery.Name = "btn_salery";
+            this.btn_salery.Size = new System.Drawing.Size(80, 96);
+            this.btn_salery.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled;
+            this.btn_salery.TabIndex = 14;
+            this.btn_salery.Text = "Salary section";
+            // 
+            // btn_checks
+            // 
+            this.btn_checks.AccessibleRole = System.Windows.Forms.AccessibleRole.PushButton;
+            this.btn_checks.BackColor = System.Drawing.Color.Transparent;
+            this.btn_checks.ColorTable = DevComponents.DotNetBar.eButtonColor.OrangeWithBackground;
+            this.btn_checks.Image = ((System.Drawing.Image)(resources.GetObject("btn_checks.Image")));
+            this.btn_checks.ImagePosition = DevComponents.DotNetBar.eImagePosition.Top;
+            this.btn_checks.Location = new System.Drawing.Point(176, 340);
+            this.btn_checks.Name = "btn_checks";
+            this.btn_checks.Size = new System.Drawing.Size(80, 96);
+            this.btn_checks.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled;
+            this.btn_checks.TabIndex = 17;
+            this.btn_checks.Text = "Check-ins and check-outs";
+            // 
+            // btn_leave_reports
+            // 
+            this.btn_leave_reports.AccessibleRole = System.Windows.Forms.AccessibleRole.PushButton;
+            this.btn_leave_reports.BackColor = System.Drawing.Color.Transparent;
+            this.btn_leave_reports.ColorTable = DevComponents.DotNetBar.eButtonColor.OrangeWithBackground;
+            this.btn_leave_reports.Image = ((System.Drawing.Image)(resources.GetObject("btn_leave_reports.Image")));
+            this.btn_leave_reports.ImagePosition = DevComponents.DotNetBar.eImagePosition.Top;
+            this.btn_leave_reports.Location = new System.Drawing.Point(175, 238);
+            this.btn_leave_reports.Name = "btn_leave_reports";
+            this.btn_leave_reports.Size = new System.Drawing.Size(80, 96);
+            this.btn_leave_reports.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled;
+            this.btn_leave_reports.TabIndex = 13;
+            this.btn_leave_reports.Text = "Employee leave reports";
+            // 
+            // btn_req_leave
+            // 
+            this.btn_req_leave.AccessibleRole = System.Windows.Forms.AccessibleRole.PushButton;
+            this.btn_req_leave.BackColor = System.Drawing.Color.Transparent;
+            this.btn_req_leave.ColorTable = DevComponents.DotNetBar.eButtonColor.OrangeWithBackground;
+            this.btn_req_leave.Image = ((System.Drawing.Image)(resources.GetObject("btn_req_leave.Image")));
+            this.btn_req_leave.ImagePosition = DevComponents.DotNetBar.eImagePosition.Top;
+            this.btn_req_leave.Location = new System.Drawing.Point(261, 238);
+            this.btn_req_leave.Name = "btn_req_leave";
+            this.btn_req_leave.Size = new System.Drawing.Size(80, 96);
+            this.btn_req_leave.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled;
+            this.btn_req_leave.TabIndex = 12;
+            this.btn_req_leave.Text = "Requests for leave";
+            this.btn_req_leave.Click += new System.EventHandler(this.btn_req_leave_Click);
+            // 
+            // btn_letters
+            // 
+            this.btn_letters.AccessibleRole = System.Windows.Forms.AccessibleRole.PushButton;
+            this.btn_letters.BackColor = System.Drawing.Color.Transparent;
+            this.btn_letters.ColorTable = DevComponents.DotNetBar.eButtonColor.OrangeWithBackground;
+            this.btn_letters.Image = ((System.Drawing.Image)(resources.GetObject("btn_letters.Image")));
+            this.btn_letters.ImagePosition = DevComponents.DotNetBar.eImagePosition.Top;
+            this.btn_letters.Location = new System.Drawing.Point(262, 136);
+            this.btn_letters.Name = "btn_letters";
+            this.btn_letters.Size = new System.Drawing.Size(80, 96);
+            this.btn_letters.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled;
+            this.btn_letters.TabIndex = 16;
+            this.btn_letters.Text = "Letters and requests";
             // 
             // btn_list_employee
             // 
@@ -311,119 +394,52 @@
             this.btn_list_jobs.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled;
             this.btn_list_jobs.TabIndex = 8;
             this.btn_list_jobs.Text = "List of jobs";
+            this.btn_list_jobs.Click += new System.EventHandler(this.btn_list_jobs_Click);
             // 
-            // btn_payroll
+            // btn_def_jobs
             // 
-            this.btn_payroll.AccessibleRole = System.Windows.Forms.AccessibleRole.PushButton;
-            this.btn_payroll.BackColor = System.Drawing.Color.Transparent;
-            this.btn_payroll.ColorTable = DevComponents.DotNetBar.eButtonColor.OrangeWithBackground;
-            this.btn_payroll.Image = ((System.Drawing.Image)(resources.GetObject("btn_payroll.Image")));
-            this.btn_payroll.ImagePosition = DevComponents.DotNetBar.eImagePosition.Top;
-            this.btn_payroll.Location = new System.Drawing.Point(3, 238);
-            this.btn_payroll.Name = "btn_payroll";
-            this.btn_payroll.Size = new System.Drawing.Size(80, 96);
-            this.btn_payroll.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled;
-            this.btn_payroll.TabIndex = 15;
-            this.btn_payroll.Text = "Payroll report";
+            this.btn_def_jobs.AccessibleRole = System.Windows.Forms.AccessibleRole.PushButton;
+            this.btn_def_jobs.BackColor = System.Drawing.Color.Transparent;
+            this.btn_def_jobs.ColorTable = DevComponents.DotNetBar.eButtonColor.OrangeWithBackground;
+            this.btn_def_jobs.Image = ((System.Drawing.Image)(resources.GetObject("btn_def_jobs.Image")));
+            this.btn_def_jobs.ImagePosition = DevComponents.DotNetBar.eImagePosition.Top;
+            this.btn_def_jobs.Location = new System.Drawing.Point(90, 34);
+            this.btn_def_jobs.Name = "btn_def_jobs";
+            this.btn_def_jobs.Size = new System.Drawing.Size(80, 96);
+            this.btn_def_jobs.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled;
+            this.btn_def_jobs.TabIndex = 6;
+            this.btn_def_jobs.Text = "Defining jobs";
+            this.btn_def_jobs.Click += new System.EventHandler(this.btn_def_jobs_Click);
             // 
-            // btn_salery
+            // btnsetting
             // 
-            this.btn_salery.AccessibleRole = System.Windows.Forms.AccessibleRole.PushButton;
-            this.btn_salery.BackColor = System.Drawing.Color.Transparent;
-            this.btn_salery.ColorTable = DevComponents.DotNetBar.eButtonColor.OrangeWithBackground;
-            this.btn_salery.Image = ((System.Drawing.Image)(resources.GetObject("btn_salery.Image")));
-            this.btn_salery.ImagePosition = DevComponents.DotNetBar.eImagePosition.Top;
-            this.btn_salery.Location = new System.Drawing.Point(89, 238);
-            this.btn_salery.Name = "btn_salery";
-            this.btn_salery.Size = new System.Drawing.Size(80, 96);
-            this.btn_salery.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled;
-            this.btn_salery.TabIndex = 14;
-            this.btn_salery.Text = "Salary section";
+            this.btnsetting.AccessibleRole = System.Windows.Forms.AccessibleRole.PushButton;
+            this.btnsetting.BackColor = System.Drawing.Color.Transparent;
+            this.btnsetting.ColorTable = DevComponents.DotNetBar.eButtonColor.OrangeWithBackground;
+            this.btnsetting.Image = ((System.Drawing.Image)(resources.GetObject("btnsetting.Image")));
+            this.btnsetting.ImagePosition = DevComponents.DotNetBar.eImagePosition.Top;
+            this.btnsetting.Location = new System.Drawing.Point(176, 34);
+            this.btnsetting.Name = "btnsetting";
+            this.btnsetting.Size = new System.Drawing.Size(80, 96);
+            this.btnsetting.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled;
+            this.btnsetting.TabIndex = 5;
+            this.btnsetting.Text = "setting";
+            this.btnsetting.Click += new System.EventHandler(this.buttonX1_Click);
             // 
-            // btn_leave_reports
+            // btnUser
             // 
-            this.btn_leave_reports.AccessibleRole = System.Windows.Forms.AccessibleRole.PushButton;
-            this.btn_leave_reports.BackColor = System.Drawing.Color.Transparent;
-            this.btn_leave_reports.ColorTable = DevComponents.DotNetBar.eButtonColor.OrangeWithBackground;
-            this.btn_leave_reports.Image = ((System.Drawing.Image)(resources.GetObject("btn_leave_reports.Image")));
-            this.btn_leave_reports.ImagePosition = DevComponents.DotNetBar.eImagePosition.Top;
-            this.btn_leave_reports.Location = new System.Drawing.Point(175, 238);
-            this.btn_leave_reports.Name = "btn_leave_reports";
-            this.btn_leave_reports.Size = new System.Drawing.Size(80, 96);
-            this.btn_leave_reports.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled;
-            this.btn_leave_reports.TabIndex = 13;
-            this.btn_leave_reports.Text = "Employee leave reports";
-            // 
-            // btn_req_leave
-            // 
-            this.btn_req_leave.AccessibleRole = System.Windows.Forms.AccessibleRole.PushButton;
-            this.btn_req_leave.BackColor = System.Drawing.Color.Transparent;
-            this.btn_req_leave.ColorTable = DevComponents.DotNetBar.eButtonColor.OrangeWithBackground;
-            this.btn_req_leave.Image = ((System.Drawing.Image)(resources.GetObject("btn_req_leave.Image")));
-            this.btn_req_leave.ImagePosition = DevComponents.DotNetBar.eImagePosition.Top;
-            this.btn_req_leave.Location = new System.Drawing.Point(261, 238);
-            this.btn_req_leave.Name = "btn_req_leave";
-            this.btn_req_leave.Size = new System.Drawing.Size(80, 96);
-            this.btn_req_leave.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled;
-            this.btn_req_leave.TabIndex = 12;
-            this.btn_req_leave.Text = "Requests for leave";
-            this.btn_req_leave.Click += new System.EventHandler(this.btn_req_leave_Click);
-            // 
-            // btn_incetive
-            // 
-            this.btn_incetive.AccessibleRole = System.Windows.Forms.AccessibleRole.PushButton;
-            this.btn_incetive.BackColor = System.Drawing.Color.Transparent;
-            this.btn_incetive.ColorTable = DevComponents.DotNetBar.eButtonColor.OrangeWithBackground;
-            this.btn_incetive.Image = ((System.Drawing.Image)(resources.GetObject("btn_incetive.Image")));
-            this.btn_incetive.ImagePosition = DevComponents.DotNetBar.eImagePosition.Top;
-            this.btn_incetive.Location = new System.Drawing.Point(262, 340);
-            this.btn_incetive.Name = "btn_incetive";
-            this.btn_incetive.Size = new System.Drawing.Size(80, 96);
-            this.btn_incetive.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled;
-            this.btn_incetive.TabIndex = 19;
-            this.btn_incetive.Text = "Incentive money";
-            // 
-            // btn_checks_report
-            // 
-            this.btn_checks_report.AccessibleRole = System.Windows.Forms.AccessibleRole.PushButton;
-            this.btn_checks_report.BackColor = System.Drawing.Color.Transparent;
-            this.btn_checks_report.ColorTable = DevComponents.DotNetBar.eButtonColor.OrangeWithBackground;
-            this.btn_checks_report.Image = ((System.Drawing.Image)(resources.GetObject("btn_checks_report.Image")));
-            this.btn_checks_report.ImagePosition = DevComponents.DotNetBar.eImagePosition.Top;
-            this.btn_checks_report.Location = new System.Drawing.Point(90, 340);
-            this.btn_checks_report.Name = "btn_checks_report";
-            this.btn_checks_report.Size = new System.Drawing.Size(80, 96);
-            this.btn_checks_report.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled;
-            this.btn_checks_report.TabIndex = 18;
-            this.btn_checks_report.Text = "Check-in/out reports";
-            // 
-            // btn_checks
-            // 
-            this.btn_checks.AccessibleRole = System.Windows.Forms.AccessibleRole.PushButton;
-            this.btn_checks.BackColor = System.Drawing.Color.Transparent;
-            this.btn_checks.ColorTable = DevComponents.DotNetBar.eButtonColor.OrangeWithBackground;
-            this.btn_checks.Image = ((System.Drawing.Image)(resources.GetObject("btn_checks.Image")));
-            this.btn_checks.ImagePosition = DevComponents.DotNetBar.eImagePosition.Top;
-            this.btn_checks.Location = new System.Drawing.Point(176, 340);
-            this.btn_checks.Name = "btn_checks";
-            this.btn_checks.Size = new System.Drawing.Size(80, 96);
-            this.btn_checks.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled;
-            this.btn_checks.TabIndex = 17;
-            this.btn_checks.Text = "Check-ins and check-outs";
-            // 
-            // btn_letters
-            // 
-            this.btn_letters.AccessibleRole = System.Windows.Forms.AccessibleRole.PushButton;
-            this.btn_letters.BackColor = System.Drawing.Color.Transparent;
-            this.btn_letters.ColorTable = DevComponents.DotNetBar.eButtonColor.OrangeWithBackground;
-            this.btn_letters.Image = ((System.Drawing.Image)(resources.GetObject("btn_letters.Image")));
-            this.btn_letters.ImagePosition = DevComponents.DotNetBar.eImagePosition.Top;
-            this.btn_letters.Location = new System.Drawing.Point(262, 136);
-            this.btn_letters.Name = "btn_letters";
-            this.btn_letters.Size = new System.Drawing.Size(80, 96);
-            this.btn_letters.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled;
-            this.btn_letters.TabIndex = 16;
-            this.btn_letters.Text = "Letters and requests";
+            this.btnUser.AccessibleRole = System.Windows.Forms.AccessibleRole.PushButton;
+            this.btnUser.BackColor = System.Drawing.Color.Transparent;
+            this.btnUser.ColorTable = DevComponents.DotNetBar.eButtonColor.OrangeWithBackground;
+            this.btnUser.Image = ((System.Drawing.Image)(resources.GetObject("btnUser.Image")));
+            this.btnUser.ImagePosition = DevComponents.DotNetBar.eImagePosition.Top;
+            this.btnUser.Location = new System.Drawing.Point(262, 34);
+            this.btnUser.Name = "btnUser";
+            this.btnUser.Size = new System.Drawing.Size(80, 96);
+            this.btnUser.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled;
+            this.btnUser.TabIndex = 4;
+            this.btnUser.Text = "add user";
+            this.btnUser.Click += new System.EventHandler(this.btnUser_Click);
             // 
             // pictureBox1
             // 
@@ -435,20 +451,6 @@
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox1.TabIndex = 8;
             this.pictureBox1.TabStop = false;
-            // 
-            // btn_about
-            // 
-            this.btn_about.AccessibleRole = System.Windows.Forms.AccessibleRole.PushButton;
-            this.btn_about.BackColor = System.Drawing.Color.Transparent;
-            this.btn_about.ColorTable = DevComponents.DotNetBar.eButtonColor.OrangeWithBackground;
-            this.btn_about.Image = ((System.Drawing.Image)(resources.GetObject("btn_about.Image")));
-            this.btn_about.ImagePosition = DevComponents.DotNetBar.eImagePosition.Top;
-            this.btn_about.Location = new System.Drawing.Point(4, 340);
-            this.btn_about.Name = "btn_about";
-            this.btn_about.Size = new System.Drawing.Size(80, 96);
-            this.btn_about.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled;
-            this.btn_about.TabIndex = 21;
-            this.btn_about.Text = "About us";
             // 
             // Form1
             // 

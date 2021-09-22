@@ -46,5 +46,15 @@ namespace Employee_management_system
         {
 
         }
+
+        private void btn_def_jobs_Click(object sender, EventArgs e)
+        {
+            new frmjobs().ShowDialog();
+        }
+
+        private void btn_list_jobs_Click(object sender, EventArgs e)
+        {
+            new FrmListJobs().ShowDialog();
+        }
     }
 }
