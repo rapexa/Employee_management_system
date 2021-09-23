@@ -139,11 +139,23 @@
     <Compile Include="Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
+    <Compile Include="frmEmployee.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmEmployee.Designer.cs">
+      <DependentUpon>frmEmployee.cs</DependentUpon>
+    </Compile>
     <Compile Include="frmjobs.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="frmjobs.Designer.cs">
       <DependentUpon>frmjobs.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmlistEmployee.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmlistEmployee.Designer.cs">
+      <DependentUpon>FrmlistEmployee.cs</DependentUpon>
     </Compile>
     <Compile Include="FrmListJobs.cs">
       <SubType>Form</SubType>
@@ -156,6 +168,12 @@
     </Compile>
     <Compile Include="FrmLoading.Designer.cs">
       <DependentUpon>FrmLoading.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmLocation.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmLocation.Designer.cs">
+      <DependentUpon>frmLocation.cs</DependentUpon>
     </Compile>
     <Compile Include="frmLogin.cs">
       <SubType>Form</SubType>
@@ -180,14 +198,23 @@
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="frmEmployee.resx">
+      <DependentUpon>frmEmployee.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="frmjobs.resx">
       <DependentUpon>frmjobs.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmlistEmployee.resx">
+      <DependentUpon>FrmlistEmployee.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FrmListJobs.resx">
       <DependentUpon>FrmListJobs.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FrmLoading.resx">
       <DependentUpon>FrmLoading.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmLocation.resx">
+      <DependentUpon>frmLocation.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmLogin.resx">
       <DependentUpon>frmLogin.cs</DependentUpon>

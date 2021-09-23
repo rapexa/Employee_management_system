@@ -11,9 +11,9 @@ using System.Data.SqlClient;
 
 namespace Employee_management_system
 {
-    public partial class frmjobs : Form
+    public partial class frmLocation : Form
     {
-        public frmjobs()
+        public frmLocation()
         {
             InitializeComponent();
         }
@@ -21,17 +21,7 @@ namespace Employee_management_system
         SqlConnection con = new SqlConnection("Data source=(local);initial catalog=EmployeeDB; integrated security = true");
         SqlCommand cmd = new SqlCommand();
 
-        private void labelX1_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void labelX2_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void frmjobs_Load(object sender, EventArgs e)
+        private void frmLocation_Load(object sender, EventArgs e)
         {
 
         }
@@ -43,40 +33,18 @@ namespace Employee_management_system
 
                 cmd.Parameters.Clear();
                 cmd.Connection = con;
-                cmd.CommandText = "insert into Jobs(JobName,Pay,Etc)values(@a,@b,@c)";
-                cmd.Parameters.AddWithValue("@a", txt_job_name.Text);
-                cmd.Parameters.AddWithValue("@b", txt_payroll.Text);
-                cmd.Parameters.AddWithValue("@c", txt_etc.Text);
+                cmd.CommandText = "insert into Rooms(NumberRoom,NameRoom,Info)values(@A,@B,@C)";
+                cmd.Parameters.AddWithValue("@A", txtCode.Text);
+                cmd.Parameters.AddWithValue("@B", txtLocation.Text);
+                cmd.Parameters.AddWithValue("@C", txtInfo.Text);
                 con.Open();
                 cmd.ExecuteNonQuery();
                 con.Close();
+
                 MessageBox.Show("Information saved successfully!");
 
             }
-            catch (Exception ex)
-            {
-
-                MessageBox.Show(ex.Message);
-
-            }
-        }
-
-        private void btnEdit_Click(object sender, EventArgs e)
-        {
-            try
-            {
-
-                cmd.Parameters.Clear();
-                cmd.Connection = con;
-                cmd.CommandText = "Update Jobs set JobName='" + txt_job_name.Text + "',Pay='" + txt_payroll.Text + "',Etc='" + txt_etc.Text + "' where idJob=" + txtCode.Text;
-                con.Open();
-                cmd.ExecuteNonQuery();
-                con.Close();
-
-                MessageBox.Show("Edit operation completed successfully!");
-
-            }
-            catch (Exception ex)
+            catch(Exception ex)
             {
 
                 MessageBox.Show(ex.Message);
@@ -91,7 +59,7 @@ namespace Employee_management_system
 
                 cmd.Parameters.Clear();
                 cmd.Connection = con;
-                cmd.CommandText = "Delete from Jobs where idJob=" + txtCode.Text;
+                cmd.CommandText = "Delete from Rooms where NumberRoom = " + txtCode.Text;
                 con.Open();
                 cmd.ExecuteNonQuery();
                 con.Close();
@@ -103,7 +71,7 @@ namespace Employee_management_system
             {
 
                 MessageBox.Show(ex.Message);
-
+            
             }
         }
 
@@ -117,17 +85,16 @@ namespace Employee_management_system
             SqlDataReader dr;
             cmd = new SqlCommand();
             cmd.Connection = con;
-            cmd.CommandText = "select * From Jobs where idJob=@N";
+            cmd.CommandText = "select * From Rooms where NumberRoom=@N";
             cmd.Parameters.AddWithValue("@N", txtCode.Text);
             con.Open();
             dr = cmd.ExecuteReader();
             if (dr.Read())
             {
 
-                txtCode.Text = dr["idJob"].ToString();
-                txt_job_name.Text = dr["JobName"].ToString();
-                txt_payroll.Text = dr["Pay"].ToString();
-                txt_etc.Text = dr["Etc"].ToString();
+                txtCode.Text = dr["NumberRoom"].ToString();
+                txtLocation.Text = dr["NameRoom"].ToString();
+                txtInfo.Text = dr["Info"].ToString();
             }
             else
             {
@@ -135,9 +102,31 @@ namespace Employee_management_system
                 MessageBox.Show("Nothing found!");
                 txtCode.Text = "";
                 txtCode.Focus();
-
             }
             con.Close();
+        }
+
+        private void btnEdit_Click(object sender, EventArgs e)
+        {
+            try
+            {
+
+                cmd.Parameters.Clear();
+                cmd.Connection = con;
+                cmd.CommandText = "Update Rooms set NameRoom='" + txtLocation.Text + "',Info='" + txtInfo.Text + "' where NumberRoom=" + txtCode.Text;
+                con.Open();
+                cmd.ExecuteNonQuery();
+                con.Close();
+
+                MessageBox.Show("Edit operation completed successfully!");
+
+            }
+            catch (Exception ex)
+            {
+
+                MessageBox.Show(ex.Message);
+
+            }
         }
     }
 }

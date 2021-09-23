@@ -126,8 +126,9 @@ namespace Employee_management_system
             else
             {
 
-                txtCode.Text = "";
                 MessageBox.Show("Nothing found!");
+                txtCode.Text = "";
+                txtCode.Focus();
 
             }
             con.Close();

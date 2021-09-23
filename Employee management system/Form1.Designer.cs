@@ -352,6 +352,7 @@
             this.btn_list_employee.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled;
             this.btn_list_employee.TabIndex = 11;
             this.btn_list_employee.Text = "List of employees";
+            this.btn_list_employee.Click += new System.EventHandler(this.btn_list_employee_Click);
             // 
             // btn_def_employee
             // 
@@ -366,6 +367,7 @@
             this.btn_def_employee.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled;
             this.btn_def_employee.TabIndex = 10;
             this.btn_def_employee.Text = "Define the employee";
+            this.btn_def_employee.Click += new System.EventHandler(this.btn_def_employee_Click);
             // 
             // btn_workspace
             // 
@@ -380,6 +382,7 @@
             this.btn_workspace.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled;
             this.btn_workspace.TabIndex = 9;
             this.btn_workspace.Text = "Workplace";
+            this.btn_workspace.Click += new System.EventHandler(this.btn_workspace_Click_1);
             // 
             // btn_list_jobs
             // 

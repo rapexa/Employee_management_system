@@ -60,5 +60,25 @@ namespace Employee_management_system
         {
             new FrmListJobs().ShowDialog();
         }
+
+        private void btn_workspace_Click(object sender, EventArgs e)
+        {
+            new frmLocation().ShowDialog();
+        }
+
+        private void btn_def_employee_Click(object sender, EventArgs e)
+        {
+            new frmEmployee().ShowDialog();
+        }
+
+        private void btn_list_employee_Click(object sender, EventArgs e)
+        {
+            new FrmlistEmployee().ShowDialog();
+        }
+
+        private void btn_workspace_Click_1(object sender, EventArgs e)
+        {
+            new frmLocation().ShowDialog();
+        }
     }
 }
