@@ -8,6 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Data.SqlClient;
+using Stimulsoft.Report;
 
 namespace Employee_management_system
 {
@@ -141,7 +142,10 @@ namespace Employee_management_system
 
         private void btnPrint_Click(object sender, EventArgs e)
         {
-
+            StiReport rpt = new StiReport();
+            rpt.Load("Reports/RptEmployments.mrt");
+            rpt.Compile();
+            rpt.ShowWithRibbonGUI();
         }
     }
 }

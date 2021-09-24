@@ -28,7 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmlistEmployee));
             this.groupPanel1 = new DevComponents.DotNetBar.Controls.GroupPanel();
             this.groupPanel2 = new DevComponents.DotNetBar.Controls.GroupPanel();
@@ -41,6 +41,7 @@
             this.groupPanel4 = new DevComponents.DotNetBar.Controls.GroupPanel();
             this.btnBack = new System.Windows.Forms.Button();
             this.btndelete = new System.Windows.Forms.Button();
+            this.btnPrint = new System.Windows.Forms.Button();
             this.groupPanel1.SuspendLayout();
             this.groupPanel2.SuspendLayout();
             this.groupPanel5.SuspendLayout();
@@ -247,14 +248,14 @@
             // 
             this.dgvEmployee.BackgroundColor = System.Drawing.Color.White;
             this.dgvEmployee.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle2.BackColor = System.Drawing.SystemColors.Window;
-            dataGridViewCellStyle2.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle2.ForeColor = System.Drawing.SystemColors.ControlText;
-            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.ControlText;
-            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.dgvEmployee.DefaultCellStyle = dataGridViewCellStyle2;
+            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle1.BackColor = System.Drawing.SystemColors.Window;
+            dataGridViewCellStyle1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle1.ForeColor = System.Drawing.SystemColors.ControlText;
+            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.ControlText;
+            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dgvEmployee.DefaultCellStyle = dataGridViewCellStyle1;
             this.dgvEmployee.Dock = System.Windows.Forms.DockStyle.Fill;
             this.dgvEmployee.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(215)))), ((int)(((byte)(229)))));
             this.dgvEmployee.Location = new System.Drawing.Point(0, 0);
@@ -268,6 +269,7 @@
             this.groupPanel4.BackColor = System.Drawing.Color.Transparent;
             this.groupPanel4.CanvasColor = System.Drawing.SystemColors.Control;
             this.groupPanel4.ColorSchemeStyle = DevComponents.DotNetBar.eDotNetBarStyle.Office2007;
+            this.groupPanel4.Controls.Add(this.btnPrint);
             this.groupPanel4.Controls.Add(this.btnBack);
             this.groupPanel4.Controls.Add(this.btndelete);
             this.groupPanel4.DisabledBackColor = System.Drawing.Color.Empty;
@@ -333,6 +335,21 @@
             this.btndelete.UseVisualStyleBackColor = false;
             this.btndelete.Click += new System.EventHandler(this.btndelete_Click);
             // 
+            // btnPrint
+            // 
+            this.btnPrint.AutoEllipsis = true;
+            this.btnPrint.BackColor = System.Drawing.Color.Transparent;
+            this.btnPrint.Image = ((System.Drawing.Image)(resources.GetObject("btnPrint.Image")));
+            this.btnPrint.ImageAlign = System.Drawing.ContentAlignment.BottomRight;
+            this.btnPrint.Location = new System.Drawing.Point(602, 1);
+            this.btnPrint.Name = "btnPrint";
+            this.btnPrint.Size = new System.Drawing.Size(83, 34);
+            this.btnPrint.TabIndex = 9;
+            this.btnPrint.Text = "Print";
+            this.btnPrint.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnPrint.UseVisualStyleBackColor = false;
+            this.btnPrint.Click += new System.EventHandler(this.btnPrint_Click);
+            // 
             // FrmlistEmployee
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -368,5 +385,6 @@
         private DevComponents.DotNetBar.Controls.TextBoxX txt_Job;
         private DevComponents.DotNetBar.Controls.TextBoxX txt_last_name;
         private DevComponents.DotNetBar.Controls.TextBoxX txt_personal_Code;
+        private System.Windows.Forms.Button btnPrint;
     }
 }
