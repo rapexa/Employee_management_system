@@ -1,11 +1,7 @@
-<center>
 
 # STOPED PROJECT
 
-
 ![alt text](https://www.seekpng.com/png/full/925-9253336_page-under-construction-stop-sign.png)
-
-</center>
 
 # Employee_management_system
 
