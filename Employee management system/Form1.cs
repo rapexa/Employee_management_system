@@ -48,7 +48,7 @@ namespace Employee_management_system
 
         private void btn_req_leave_Click(object sender, EventArgs e)
         {
-
+            new frmleaves().ShowDialog();
         }
 
         private void btn_def_jobs_Click(object sender, EventArgs e)

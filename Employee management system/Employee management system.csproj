@@ -151,6 +151,12 @@
     <Compile Include="frmjobs.Designer.cs">
       <DependentUpon>frmjobs.cs</DependentUpon>
     </Compile>
+    <Compile Include="frmleaves.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmleaves.Designer.cs">
+      <DependentUpon>frmleaves.cs</DependentUpon>
+    </Compile>
     <Compile Include="FrmlistEmployee.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -203,6 +209,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="frmjobs.resx">
       <DependentUpon>frmjobs.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmleaves.resx">
+      <DependentUpon>frmleaves.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FrmlistEmployee.resx">
       <DependentUpon>FrmlistEmployee.cs</DependentUpon>
